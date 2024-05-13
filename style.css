@@ -196,3 +196,131 @@ figcaption {
     text-decoration: none;
 }
 
+/* Carrito de compra */
+
+.maincarrito{
+    position:relative;
+    flex-wrap: wrap;
+    margin-top: 10%; /* Ajustado para adaptarse al nuevo margen superior */
+    margin-right: 0%;
+    margin-bottom: 0%;
+    height: auto;
+    width: auto;
+    padding: 4% 0% 10% 10%; /* Ajustado para adaptarse al nuevo margen superior */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color:rgba(231, 223, 236, 0);
+    
+}
+
+.btn-cart {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position:relative;
+    right: 0px;
+    top: -5px;
+  }
+  
+  .btn-cart::after {
+    content: attr(data-quantity);
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    top: 105%;
+  }
+  
+  .icon-cart {
+    width: 22px;
+    height: 22px;
+    transition: .2s linear;
+  }
+  
+  .icon-cart path {
+    fill: rgb(8, 112, 240);
+    transition: .2s linear;
+  }
+  
+  .btn-cart:hover > .icon-cart {
+    transform: scale(1.2);
+  }
+  
+  .btn-cart:hover > .icon-cart path {
+    fill: rgb(34, 233, 84);
+  }
+  
+  .btn-cart:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 80%;
+  }
+  
+  .quantity {
+    display: none;
+  }
+  
+  .carrito-activo .icon-cart {
+    fill: rgb(34, 233, 84); 
+  }
+  .carrito-activo .icon-cart path {
+    fill: rgb(34, 233, 84); 
+  }
+
+  .carrito h2{
+     
+    margin-top: -3%;
+    margin-left: -10%;
+  }
+  
+  .carrito hr{
+    margin-left: -12%;
+    width: 60%;
+    border-width: 3px;
+  }
+
+/*Resumen de compra*/
+
+
+.resumenCompra {
+    background-color:#e9e7eb;
+    border: 1px solid #454446;  /*Cambia el estilo del borde según tus preferencias*/ 
+    padding: 10px;  /*Añade relleno para separar el contenido del borde */
+    position: absolute;  /*Establece el posicionamiento absoluto para poder ajustar la posición con respecto al contenedor padre */
+    top: 80px;  /*Ajusta la posición verticalmente según tu diseño */
+    right: 70px;  /*Ajusta la posición a la derecha del contenedor */
+    border-radius: 1rem;
+    /*height: calc(210% - 50px);*/ 
+}
+
+.boton1{
+    background-color: #0091ff; /*Cambia el color de fondo de los botones a rojo (#ff0000)*/
+    color: #ffffff; /*Cambia el color del texto a blanco (#ffffff) para que sea visible en el fondo rojo*/
+    padding: 10px 20px; /*Ajusta el relleno para que los botones se vean bien */
+    margin-right: 10px; /*Añade un margen a la derecha de los botones para separarlos*/
+    border-radius:  1rem; /*cambia la curvatura del boton*/
+    border-style: solid; /*estilo de borde*/
+   /*position: relative;*/
+    /*top: 18rem;*/
+}
+
+.boton2{
+    background-color: #dad0d0; /*  Cambia el color de fondo de los botones a rojo (#ff0000) */
+    color: #1c6fd3; /*  Cambia el color del texto a blanco (#ffffff) para que sea visible en el fondo rojo */
+    padding: 10px 20px; /*  Ajusta el relleno para que los botones se vean bien */
+    margin-right: 10px; /*  Añade un margen a la derecha de los botones para separarlos */
+    border-radius:  1rem; /*cambia la curvatura del boton*/
+    border-style: solid; /* estilo de borde*/
+    /*position: relative;*/
+    /*top: 18rem;*/
+}

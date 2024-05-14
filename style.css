@@ -277,8 +277,7 @@ figcaption {
     fill: rgb(34, 233, 84); 
   }
 
-  .carrito h2{
-     
+  .carrito h3{ 
     margin-top: -3%;
     margin-left: -10%;
   }
@@ -292,7 +291,7 @@ figcaption {
 /*Resumen de compra*/
 
 
-.resumenCompra {
+  .resumenCompra {
     background-color:#e9e7eb;
     border: 1px solid #454446;  /*Cambia el estilo del borde según tus preferencias*/ 
     padding: 10px;  /*Añade relleno para separar el contenido del borde */
@@ -301,9 +300,9 @@ figcaption {
     right: 70px;  /*Ajusta la posición a la derecha del contenedor */
     border-radius: 1rem;
     /*height: calc(210% - 50px);*/ 
-}
+   }
 
-.boton1{
+  .boton1{
     background-color: #0091ff; /*Cambia el color de fondo de los botones a rojo (#ff0000)*/
     color: #ffffff; /*Cambia el color del texto a blanco (#ffffff) para que sea visible en el fondo rojo*/
     padding: 10px 20px; /*Ajusta el relleno para que los botones se vean bien */
@@ -312,9 +311,10 @@ figcaption {
     border-style: solid; /*estilo de borde*/
    /*position: relative;*/
     /*top: 18rem;*/
-}
+    font-weight: bold;
+  }
 
-.boton2{
+  .boton2{
     background-color: #dad0d0; /*  Cambia el color de fondo de los botones a rojo (#ff0000) */
     color: #1c6fd3; /*  Cambia el color del texto a blanco (#ffffff) para que sea visible en el fondo rojo */
     padding: 10px 20px; /*  Ajusta el relleno para que los botones se vean bien */
@@ -323,6 +323,6 @@ figcaption {
     border-style: solid; /* estilo de borde*/
     /*position: relative;*/
     /*top: 18rem;*/
-}
-
+  }
+  
 

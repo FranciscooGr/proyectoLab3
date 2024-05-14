@@ -277,7 +277,7 @@ figcaption {
     fill: rgb(34, 233, 84); 
   }
 
-  .carrito h2{
+  .carrito h3{
      
     margin-top: -3%;
     margin-left: -10%;
@@ -289,8 +289,8 @@ figcaption {
     border-width: 3px;
   }
 
-/*Resumen de compra*/
 
+/*Resumen de compra*/
 
 .resumenCompra {
     background-color:#e9e7eb;
@@ -299,8 +299,7 @@ figcaption {
     position: absolute;  /*Establece el posicionamiento absoluto para poder ajustar la posición con respecto al contenedor padre */
     top: 80px;  /*Ajusta la posición verticalmente según tu diseño */
     right: 70px;  /*Ajusta la posición a la derecha del contenedor */
-    border-radius: 1rem;
-    /*height: calc(210% - 50px);*/ 
+    border-radius: 1rem; 
 }
 
 .boton1{
@@ -310,8 +309,7 @@ figcaption {
     margin-right: 10px; /*Añade un margen a la derecha de los botones para separarlos*/
     border-radius:  1rem; /*cambia la curvatura del boton*/
     border-style: solid; /*estilo de borde*/
-   /*position: relative;*/
-    /*top: 18rem;*/
+    font-weight: bold;
 }
 
 .boton2{
@@ -321,8 +319,6 @@ figcaption {
     margin-right: 10px; /*  Añade un margen a la derecha de los botones para separarlos */
     border-radius:  1rem; /*cambia la curvatura del boton*/
     border-style: solid; /* estilo de borde*/
-    /*position: relative;*/
-    /*top: 18rem;*/
 }
 
 

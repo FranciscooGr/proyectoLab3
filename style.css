@@ -328,3 +328,24 @@ form .contraseña{
     color: white;
 }
 
+input[type="submitcuenta"] {
+    style="font-family:'Bebas Neue'; font-size: 20px"
+    width: 100%;
+    padding: 10px;
+    background-color: #000000; /* Button background color */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+}

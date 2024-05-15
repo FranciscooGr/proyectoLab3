@@ -10,7 +10,7 @@
     <title>Cuenta</title>
     <style>
         body {
-            margin-top: 1px; 
+            margin-top: 20px; 
             /* Basic dimensions and centering */
             display: flex;
             justify-content: center;
@@ -28,7 +28,7 @@
               <div class="container-fluid">
                   <a class="navbar-brand" href="#">
                       <span style="color: white; font-family: 'Bebas Neue'; font-size: 30px;">SneakyWalks</span>
-                      <img src="assets-2/logo.png" style="width: 50px; height: 45px; color: white;">
+                      <img src="assets-2/imgLogo.png" style="width: 50px; height: 45px; color: white;">
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
                       <ul class="navbar-nav ms-auto">
                           <li class="nav-item">
-                              <a class="nav-link" aria-current="page" href="#" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
+                              <a class="nav-link" aria-current="page" href="index.html" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
                           </li>
                           <li class="nav-item">
                               <a class="nav-link" href="#" style="font-family:'Bebas Neue'; font-size: 20px">Colección</a>
@@ -45,10 +45,10 @@
                               <a class="nav-link" href="#" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="/cuenta.html" style="font-family:'Bebas Neue'; font-size: 20px">Cuenta</a>
+                              <a class="nav-link" href="cuenta.html" style="font-family:'Bebas Neue'; font-size: 20px">Cuenta</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="/carrito.html">
+                              <a class="nav-link" href="carrito.html">
                                   <img src="assets-2/carrito.png" width="35" alt="Carrito de Compras">
                               </a>
                           </li>              
@@ -61,24 +61,23 @@
           </nav>
       </header>
       <body>
-        <div class="formulario">
-            <h1><img src="imagen inicio de sesion"></h1>
+        <div class="formulario" style="font-family:'Bebas Neue'; font-size: 15px">
+            <br><br><br><br><br><br><br>
+            <h1><img src="assets-2/ICONOS-27.png" style="height: 70px;"></h1>
             <form method="post">
-                <div class="username">
-                    <input type="text" required>
-                    <label>Nombre de usuario</label>
+                <div class="username" style="font-family:'Bebas Neue'; font-size: 15px">
+                    <input type="text" placeholder="Nombre de usuario" required>
                 </div>
-                <div class="contraseña">
-                    <input type="password" required>
-                    <label>Contraseña</label>
-                </div> 
-                <div class="recordar">¿Olvido su contraseña?</div> 
-                <input type="submit" value="Iniciar Sesion"> 
+                <div class="contraseña" style="font-family:'Bebas Neue'; font-size: 15px">
+                    <input type="password" placeholder="Contraseña" required>
                 </div>
+                <div class="recordar"><a href="recuperarcontrasena.html">¿Olvidó su contraseña?</a></div> 
+                <input type="submit" value="Iniciar Sesión"> 
                 <div class="Registrarse">
-                    ¿No tienes una cuenta? <a href="#"> Registrarse</a>
+                    <br>
+                    ¿No tienes una cuenta? <a href="registro.html">Registrarse</a>
                 </div>   
             </form>  
         </div>
-      </body>
-    </html>
+    </body>
+</html>

@@ -329,7 +329,6 @@ form .contraseña{
 }
 
 input[type="submitcuenta"] {
-    style="font-family:'Bebas Neue'; font-size: 20px"
     width: 100%;
     padding: 10px;
     background-color: #000000; /* Button background color */

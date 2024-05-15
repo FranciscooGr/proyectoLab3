@@ -106,24 +106,30 @@
         <div class="grid-column">
             <div class="figura">
                 <figure class="card">
-                    <img src="/assets-2/img-1-urbana.jpg" class="card" id="urbano">
-                    <figcaption>Nike Court Legacy Lift</figcaption>
+                    <a href="/despcripcionZapatillas.html">
+                        <img src="/assets-2/img-1-urbana.jpg" onclick="guardarImagen('/assets-2/img-1-urbana.jpg')"  class="card" id="urbano" data-src="imagen-grande.jpg">>
+                        <figcaption>Nike Court Legacy Lift</figcaption>
+                    </a>
                 </figure>
             </div>
         </div>
         <div class="grid-column">
             <div class="figura">
                 <figure class="card">
-                    <img src="/assets-2/img-2-urbana.jpg" class="card" id="urbano">
-                    <figcaption>Nike Court Vision </figcaption>
+                    <a href="/despcripcionZapatillas.html">
+                        <img src="/assets-2/img-2-urbana.jpg" onclick="guardarImagen('/assets-2/img-2-urbana.jpg')"  class="card" id="urbano">
+                        <figcaption>Nike Court Vision </figcaption>
+                    </a>
                 </figure>
             </div>
         </div>
         <div class="grid-column">
             <div class="figura">
                 <figure class="card">
-                    <img src="/assets-2/img-3-urbana.jpg" class="card" id="urbano">
+                    <a href="/despcripcionZapatillas.html">
+                        <img src="/assets-2/img-3-urbana.jpg" onclick="guardarImagen('/assets-2/img-3-urbana.jpg')" class="card" id="urbano">
                     <figcaption>Nike Court Vision Mid</figcaption>
+                    </a>
                 </figure>
             </div>
         </div>
@@ -132,24 +138,30 @@
         <div class="grid-column">
             <div class="figura">
                 <figure class="card">
-                    <img src="/assets-2/img-4-urbana.jpg" class="card" id="urbano">
-                    <figcaption>Nike Air Force 1</figcaption>
+                    <a href="/despcripcionZapatillas.html">
+                        <img src="/assets-2/img-4-urbana.jpg" onclick="guardarImagen('/assets-2/img-4-urbana.jpg')" class="card" id="urbano">
+                        <figcaption>Nike Air Force 1</figcaption>
+                    </a>
                 </figure>
             </div>
         </div>
         <div class="grid-column">
             <div class="figura">
                 <figure class="card">
-                    <img src="/assets-2/img-5-urbana.jpg" class="card" id="urbano">
+                    <a href="/despcripcionZapatillas.html">
+                        <img src="/assets-2/img-5-urbana.jpg" onclick="guardarImagen('/assets-2/img-5-urbana.jpg')" class="card" id="urbano">
                     <figcaption>Nike Air Force 1 07 SE Mujer</figcaption>
+                    </a>
                 </figure>
             </div>
         </div>
         <div class="grid-column">
             <div class="figura">
                 <figure class="card">
-                    <img src="/assets-2/img-6-urbana.jpg" class="card" id="urbano">
+                    <a href="/despcripcionZapatillas.html">
+                        <img src="/assets-2/img-6-urbana.jpg" onclick="guardarImagen('/assets-2/img-6-urbana.jpg')" class="card" id="urbano">
                     <figcaption>Nike Air Max 97 Se Ncps Mujer</figcaption>
+                    </a>
                 </figure>
             </div>
         </div>
@@ -159,30 +171,39 @@
         <div class="grid-column">
             <div class="figura">
                 <figure class="card">
-                    <img src="/assets-2/img-7-deportivo.jpg" class="card" id="deportivo">
+                    <a href="">
+                        <img src="/assets-2/img-7-deportivo.jpg" onclick="guardarImagen('/assets-2/img-7-deportivo.jpg')" class="card" id="deportivo">
                     <figcaption>Adidas Duramo One</figcaption>
+                    </a>
                 </figure>
             </div>
         </div>
         <div class="grid-column">
             <div class="figura">
                 <figure class="card">
-                    <img src="/assets-2/img-8-deportivo.jpg" class="card" id="deportivo">
-                    <figcaption>Adidas Questar Mujer</figcaption>
+                    <a href="/despcripcionZapatillas.html">
+                        <img src="/assets-2/img-8-deportivo.jpg" onclick="guardarImagen('/assets-2/img-8-deportivo.jpg')" class="card" id="deportivo">
+                    <figcaption>Adidas Duramo One</figcaption>
+                    </a>
                 </figure>
             </div>
         </div>
         <div class="grid-column">
             <div class="figura">
                 <figure class="card">
-                    <img src="/assets-2/img-9-deportivo.jpg" class="card" id="deportivo">
+                    <a href="/despcripcionZapatillas.html">
+                        <img src="/assets-2/img-9-deportivo.jpg" onclick="guardarImagen('/assets-2/img-9-deportivo.jpg')" class="card" id="deportivo">
                     <figcaption>Adidas Adizero Boston</figcaption>
+                    </a>
                 </figure>
             </div>
         </div>
     </div>
 </article>
 </main>
+
+<!-- En el cuerpo del documento -->
+
 
 <footer class="footer">
     <div class="grupo-1">
@@ -227,5 +248,12 @@
         <small>&copy;2024 <b>Slee down</b> -Todos Los Derechos Reservados.</small>
     </div>
 </footer>
+
+<script>
+    function guardarImagen(urlImagen) {
+        localStorage.setItem('imagen', urlImagen); // Almacena la URL en localStorage
+        window.location.href = '/despcripcionZapatillas.html'; // Redirige a la segunda página
+    }
+</script>
 </body>
 </html>

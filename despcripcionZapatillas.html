@@ -22,7 +22,7 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                   <ul class="navbar-nav ms-auto">
                       <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
+                          <a class="nav-link" aria-current="page" href="/index.html" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#" style="font-family:'Bebas Neue'; font-size: 20px">Colección</a>
@@ -53,22 +53,29 @@
   <main class="main">
     <div class="contenedor-producto">
         <div class="contenedor-imagen-titulo">
-            <img src="/assets-2/img-1-urbana.jpg" class="imagenProducto">
+            <img src="" class="mainImg" id="urbano" alt="Zapatilla">
             <h3 class="tituloProducto">Título del Producto</h3>
         </div>
         <div class="contenedor-informacion">
-            <input type="text" placeholder="Precio">
-            <textarea placeholder="Descripción"></textarea>
-            <button>Agregar al carrito</button>
+            <textarea class="descripcion" placeholder="Descripción"></textarea>
+            <div class="contenedor-precio">
+                <input type="text" placeholder="19000$" class="precio" readonly>
+            </div>
+            <button class="agregarCarrito">Agregar al carrito</button>
         </div>
     </div>
 </main>
+<script>
+    const urlImagen = localStorage.getItem('imagen'); // Recupera la URL de localStorage
 
+    // Establece la URL de la imagen en el elemento <img> con el ID específico
+    document.querySelector('#urbano').src = urlImagen;
+</script>
   <footer class="footer">
       <div class="grupo-1">
           <div class="box">
               <figure>
-                  <a href="#">
+                  <a href="/index.html">
                       <img src="/assets-2/imgLogo.png" alt="">
                   </a>
               </figure>

@@ -1,0 +1,504 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Establece una altura mínima del viewport */
+html, body {
+    height: 100%;
+}
+
+/* Establece el color de fondo general */
+body {
+    background-color: #8f8e90;
+    font-family: Bebas Neue; /* Cambiado a una fuente más común */
+}
+
+/* Establece el color del texto para todos los elementos */
+
+.bg-custom {
+    background-color: #454446; /* Establece el color de fondo personalizado */
+}
+/* Estilos para la barra de navegación */
+.navbar-brand {
+    color: white; /* Cambiado a blanco para mayor contraste */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white; /* Establece el color del texto de los enlaces de navegación en blanco */
+}
+
+.custom-padding {
+    margin: 1% 1% 0; /* Ajusta los márgenes superior, derecho e izquierdo */
+    border-radius: 20px;
+}
+
+/* Estilos para el contenido principal */
+.main {
+  font-family:Bebas Neue;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 10%; /* Ajustado para adaptarse al nuevo margen superior */
+    margin-right: 0%;
+    margin-bottom: 0%;
+    
+    height: 100%;
+    width: auto;
+    padding: 4% 0% 10% 10%; /* Ajustado para adaptarse al nuevo margen superior */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #8f8e90;
+}
+/* Estilos para el contenedor de imágenes */
+.contenedor-producto {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio */
+}
+
+.contenedor-imagen-titulo {
+    flex: 1;
+}
+
+.contenedor-informacion {
+    flex: 1;
+    padding-left: 20px; /* Espacio entre la imagen y los detalles */
+}
+
+.mainImg {
+    width: 500px; /* Ancho de la imagen */
+    max-width: 500px;
+    height: auto; /* Altura ajustada automáticamente */
+    border-radius: 20px;
+}
+
+.precio-container {
+    margin-bottom: 10px; /* Espacio entre el precio y la descripción */
+}
+
+
+.precio {
+    width: 1%; /* Ancho del campo de precio */
+    font-size: 20px; /* Tamaño del texto del precio */
+    max-width: 200px;
+    color: black;
+}
+
+.descripcion {
+    height: 100px; /* Altura del campo de descripción */
+    resize: vertical; /* Permitir redimensionar verticalmente */
+    margin-bottom: 10px; /* Espacio entre la descripción y el botón */
+    border-radius: 20px;
+    width: 95%;
+    max-width: 95%;
+}
+
+.agregarCarrito {
+    align-self: flex-start; /* Alinear el botón al inicio */
+    border-radius: 20px;
+}
+/*footer estilo */
+.footer{
+    font-family: Bebas Neue;
+    background-color: #454446;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+}
+.footer .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px;
+  max-height: 100%;
+  height: auto;
+}
+.grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grupo-1 .box h2{
+  color: white;
+  margin-bottom: 2%;
+  font-size: 20px;
+}
+.grupo-2{
+  padding: 1% 1%;
+  text-align: center;
+}
+@media screen and (max-width: 800px){
+  .footer .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+.carts {
+  width: fit-content;
+  height: fit-content;
+  background-color: #454446;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+.linkPaginas{
+  text-decoration: none;
+  color:rgb(44, 44, 44);
+  display: block; /* Hace que los enlaces se muestren como bloques, ocupando toda la anchura disponible */
+  margin-bottom: 10px; 
+}
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.socialContainer:not(:last-child) {
+  margin-right: 20px; /* Espacio entre los iconos */
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* Carrito de compra */
+
+.maincarrito{
+    position:relative;
+    flex-wrap: wrap;
+    margin-top: 10%; /* Ajustado para adaptarse al nuevo margen superior */
+    margin-right: 0%;
+    margin-bottom: 0%;
+    height: auto;
+    width: auto;
+    padding: 4% 0% 10% 10%; /* Ajustado para adaptarse al nuevo margen superior */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color:rgba(231, 223, 236, 0);
+    
+}
+
+.btn-cart {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position:relative;
+    right: 0px;
+    top: -5px;
+  }
+  
+  .btn-cart::after {
+    content: attr(data-quantity);
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    top: 105%;
+  }
+  
+  .icon-cart {
+    width: 22px;
+    height: 22px;
+    transition: .2s linear;
+  }
+  
+  .icon-cart path {
+    fill: rgb(8, 112, 240);
+    transition: .2s linear;
+  }
+  
+  .btn-cart:hover > .icon-cart {
+    transform: scale(1.2);
+  }
+  
+  .btn-cart:hover > .icon-cart path {
+    fill: rgb(34, 233, 84);
+  }
+  
+  .btn-cart:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 80%;
+  }
+  
+  .quantity {
+    display: none;
+  }
+  
+  .carrito-activo .icon-cart {
+    fill: rgb(34, 233, 84); 
+  }
+  .carrito-activo .icon-cart path {
+    fill: rgb(34, 233, 84); 
+  }
+
+  .carrito h2{
+     
+    margin-top: -3%;
+    margin-left: -10%;
+  }
+  
+  .carrito hr{
+    margin-left: -12%;
+    width: 60%;
+    border-width: 3px;
+  }
+
+/*Resumen de compra*/
+
+
+.resumenCompra {
+    background-color:#e9e7eb;
+    border: 1px solid #454446;  /*Cambia el estilo del borde según tus preferencias*/ 
+    padding: 10px;  /*Añade relleno para separar el contenido del borde */
+    position: absolute;  /*Establece el posicionamiento absoluto para poder ajustar la posición con respecto al contenedor padre */
+    top: 80px;  /*Ajusta la posición verticalmente según tu diseño */
+    right: 70px;  /*Ajusta la posición a la derecha del contenedor */
+    border-radius: 1rem;
+    /*height: calc(210% - 50px);*/ 
+}
+
+.boton1{
+    background-color: #0091ff; /*Cambia el color de fondo de los botones a rojo (#ff0000)*/
+    color: #ffffff; /*Cambia el color del texto a blanco (#ffffff) para que sea visible en el fondo rojo*/
+    padding: 10px 20px; /*Ajusta el relleno para que los botones se vean bien */
+    margin-right: 10px; /*Añade un margen a la derecha de los botones para separarlos*/
+    border-radius:  1rem; /*cambia la curvatura del boton*/
+    border-style: solid; /*estilo de borde*/
+   /*position: relative;*/
+    /*top: 18rem;*/
+}
+
+.boton2{
+    background-color: #dad0d0; /*  Cambia el color de fondo de los botones a rojo (#ff0000) */
+    color: #1c6fd3; /*  Cambia el color del texto a blanco (#ffffff) para que sea visible en el fondo rojo */
+    padding: 10px 20px; /*  Ajusta el relleno para que los botones se vean bien */
+    margin-right: 10px; /*  Añade un margen a la derecha de los botones para separarlos */
+    border-radius:  1rem; /*cambia la curvatura del boton*/
+    border-style: solid; /* estilo de borde*/
+    /*position: relative;*/
+    /*top: 18rem;*/
+}.formulario {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #858585;
+    border-radius: 10px;
+}
+
+.formulario h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.username input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #ffffff;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+
+.username span::before{
+    content:"";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(58, 58, 58);
+    transition: .5s;
+}
+
+.username input:focus ~ label,
+.username input:focus ~ label{
+    top: -5px;
+    color: #ffffff;
+}
+
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+    width: 100%;
+}
+
+.recordar{
+    color: rgb(0, 4, 255);
+    margin: -5px 0 20px 5px;
+    cursor: pointer;
+}
+
+.recordar:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid;
+    background: rgb(66, 66, 66);
+    border-radius: 25px;
+    font-size: 18px;
+    color:#000000;
+    cursor: pointer;
+    outline: none;
+}
+
+form .contraseña{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.contraseña input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.contraseña label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #ffffff;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.contraseña input:focus ~ label,
+.contraseña input:focus ~ label{
+    top: -5px;
+    color: #ffffff;
+}
+
+.recordar {
+    color: white;
+}
+
+.Registrarse {
+    color: white;
+}
+
+input[type="submitcuenta"] {
+    style="font-family:'Bebas Neue'; font-size: 20px"
+    width: 100%;
+    padding: 10px;
+    background-color: #000000; /* Button background color */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+}

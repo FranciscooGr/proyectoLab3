@@ -44,6 +44,7 @@ body {
     
     height: auto;
     width: auto;
+    max-width: 100%;
     padding: 4% 0% 10% 10%; /* Ajustado para adaptarse al nuevo margen superior */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -170,6 +171,7 @@ figcaption {
     font-family: Bebas Neue;
     background-color: #454446;
     width: 100%;
+    height: 100%;
 }
 .footer .grupo-1{
   width: 100%;
@@ -196,6 +198,7 @@ figcaption {
   padding: 1% 1%;
   text-align: center;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 800px){
   .footer .grupo-1{
     width: 90%;
@@ -324,7 +327,7 @@ figcaption {
     height: fit-content;
     position: absolute;
     font-size: 15px;
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     opacity: 0;
     visibility: hidden;
@@ -414,7 +417,15 @@ figcaption {
     border-style: solid; /* estilo de borde*/
     /*position: relative;*/
     /*top: 18rem;*/
-}.formulario {
+}
+=======
+.link{
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.formulario {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -567,3 +578,4 @@ input[type="password"] {
     border-radius: 50px;
     box-sizing: border-box;
 }
+>>>>>>> devTom

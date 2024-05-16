@@ -184,7 +184,7 @@ figcaption {
     font-size: 1em; /* Tamaño de fuente relativo */
 }
 /*ofertas*/
-. p {
+.p {
   font-size: 16px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
@@ -527,12 +527,12 @@ figcaption {
   border: 1px solid #454446;
   padding: 10px;
   border-radius: 1rem;
-  margin-top: 20px;
+  margin-top: 2%;
   width: 100%;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  
+  margin-bottom: 3%;
 }
 
 .boton1 {
@@ -547,7 +547,6 @@ figcaption {
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
 .boton2{
     background-color: #dad0d0; /*  Cambia el color de fondo de los botones a rojo (#ff0000) */
     color: #1c6fd3; /*  Cambia el color del texto a blanco (#ffffff) para que sea visible en el fondo rojo */
@@ -556,6 +555,8 @@ figcaption {
     border-radius:  1rem; /*cambia la curvatura del boton*/
     border-style: solid; /* estilo de borde*/
     /*position: relative;*/
+    width: 100%;
+    margin-top: 1%;
     /*top: 18rem;*/
 }
 .link{
@@ -716,7 +717,6 @@ input[type="password"] {
     border: 1.5px solid #ccc;
     border-radius: 50px;
     box-sizing: border-box;
-=======
 .boton2 {
   padding: 10px 20px;
   background-color: #dad0d0;
@@ -828,5 +828,4 @@ input[type="password"] {
     font-size: 12px;
     top: 110%;
   }
->>>>>>> devMati
 }

@@ -28,6 +28,7 @@ body {
 /* Estilos para la barra de navegación */
 .navbar-brand {
     color: white; /* Cambiado a blanco para mayor contraste */
+    background-color: #454446;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -128,6 +129,7 @@ figcaption {
     font-size: 30px; /* Tamaño de fuente */
     text-decoration: none; /* Sin subrayado en el enlace */
     padding: 0 15px; /* Espaciado a la izquierda y derecha */
+    
 }
 .footer {
     font-family: Bebas Neue;

@@ -181,6 +181,71 @@ figcaption {
 .btn-outline-success {
     font-size: 1em; /* Tamaño de fuente relativo */
 }
+/*ofertas*/
+. p {
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+.discount {
+  color: rgb(37, 216, 52);
+}
+
+.subtitulos {
+  font-size: 30px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* Estilos para las imágenes */
+
+/* Estilos para los contenedores de métodos */
+.methods {
+  display: flex;
+  flex-direction: column;
+  /* Apila los elementos verticalmente */
+  align-items: center;
+  border-radius: 30px;
+  width: 80%;
+  /* Establece un ancho máximo para evitar que los métodos se extiendan demasiado en pantallas grandes */
+  max-width: 350px;
+  margin: 0 auto 30px;
+  /* Añade espacio debajo de los métodos */
+}
+
+/* Media queries para hacer el diseño responsive */
+@media screen and (min-width: 768px) {
+  .grid-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas en pantallas medianas y grandes */
+    gap: 20px;
+  }
+
+  .methods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 350px;
+    margin: 0 auto 30px;
+  }
+
+  .methods img {
+    width: 80px;
+    /* Ajusta el ancho de las imágenes según sea necesario */
+    margin-bottom: 10px;
+    /* Espacio entre la imagen y el texto */
+  }
+
+  .col-md-4 {
+    margin-bottom: 2%;
+    /* Agrega espacio entre las cartas */
+  }
+}
+
 /*footer estilo */
 .footer {
   font-family: Bebas Neue;

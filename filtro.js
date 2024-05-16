@@ -1,63 +1,67 @@
-document.addEventListener("DOMContentLoaded", function(){
-    const select = document.getElementById("filtroSelect");
-    
-    select.addEventListener('change', function(event){
-        const valorSeleccionado = event.target.value;
-        console.log("Elección:", valorSeleccionado);
-        const imagenesUrbanas = document.querySelectorAll("#urbano");
-        const imagenesDeportivas = document.querySelectorAll("#deportivo");
+document.addEventListener("DOMContentLoaded", function () {
+  const select = document.getElementById("filtroSelect");
 
-            if(valorSeleccionado === "urbano"){
-                imagenesDeportivas.forEach(function(imagen) {
-                    imagen.style.display = "none";
-                });
-            
-                // Mostrar todas las imágenes urbanas
-                imagenesUrbanas.forEach(function(imagen) {
-                    imagen.style.display = "block";
-                });
-                imagenesDeportivas.forEach(function(imagen) {
-                    const figcaption = imagen.nextElementSibling;
-                    if (figcaption.tagName === "FIGCAPTION") {
-                        figcaption.style.display = "none";
-                    }
-                });
-            }else if(valorSeleccionado === "deportivo"){
-                imagenesDeportivas.forEach(function(imagen) {
-                    imagen.style.display = "block";
-                });
-            
-                // Mostrar todas las imágenes urbanas
-                imagenesUrbanas.forEach(function(imagen) {
-                    imagen.style.display = "none";
-                });
-                imagenesUrbanas.forEach(function(imagen) {
-                    const figcaption = imagen.nextElementSibling;
-                    if (figcaption.tagName === "FIGCAPTION") {
-                        figcaption.style.display = "none";
-                    }
-                });
-            }else if(valorSeleccionado === "filtro" || valorSeleccionado === "restaurar"){
-                imagenesDeportivas.forEach(function(imagen) {
-                    imagen.style.display = "block";
-                });
-            
-                // Mostrar todas las imágenes urbanas
-                imagenesUrbanas.forEach(function(imagen) {
-                    imagen.style.display = "block";
-                });
-                imagenesUrbanas.forEach(function(imagen) {
-                    const figcaption = imagen.nextElementSibling;
-                    if (figcaption.tagName === "FIGCAPTION") {
-                        figcaption.style.display = "block";
-                    }
-                });
-                imagenesDeportivas.forEach(function(imagen) {
-                    const figcaption = imagen.nextElementSibling;
-                    if (figcaption.tagName === "FIGCAPTION") {
-                        figcaption.style.display = "block";
-                    }
-                });
-            }
-    });
+  select.addEventListener("change", function (event) {
+    const valorSeleccionado = event.target.value;
+    console.log("Elección:", valorSeleccionado);
+    const imagenesUrbanas = document.querySelectorAll(".cardUrbano");
+    const imagenesDeportivas = document.querySelectorAll(".cardDeportivo");
+
+    if (valorSeleccionado === "urbano") {
+      // Ocultar todas las imágenes deportivas y sus figcaptions
+      imagenesDeportivas.forEach(function (imagen) {
+        imagen.style.display = "none";
+        const figcaption = imagen.querySelector("#figcaption");
+        if (figcaption) {
+          figcaption.style.display = "none";
+        }
+      });
+
+      // Mostrar todas las imágenes urbanas y sus figcaptions
+      imagenesUrbanas.forEach(function (imagen) {
+        imagen.style.display = "block";
+        const figcaption = imagen.querySelector("#figcaption");
+        if (figcaption) {
+          figcaption.style.display = "block";
+        }
+      });
+    } else if (valorSeleccionado === "deportivo") {
+      // Ocultar todas las imágenes urbanas y sus figcaptions
+      imagenesUrbanas.forEach(function (imagen) {
+        imagen.style.display = "none";
+        const figcaption = imagen.querySelector("#figcaption");
+        if (figcaption) {
+          figcaption.style.display = "none";
+        }
+      });
+
+      // Mostrar todas las imágenes deportivas y sus figcaptions
+      imagenesDeportivas.forEach(function (imagen) {
+        imagen.style.display = "block";
+        const figcaption = imagen.querySelector("#figcaption");
+        if (figcaption) {
+          figcaption.style.display = "block";
+        }
+      });
+    } else if (
+      valorSeleccionado === "filtro" ||
+      valorSeleccionado === "restaurar"
+    ) {
+      // Mostrar todas las imágenes y sus figcaptions
+      imagenesUrbanas.forEach(function (imagen) {
+        imagen.style.display = "block";
+        const figcaption = imagen.querySelector("figcaption");
+        if (figcaption) {
+          figcaption.style.display = "block";
+        }
+      });
+      imagenesDeportivas.forEach(function (imagen) {
+        imagen.style.display = "block";
+        const figcaption = imagen.querySelector("figcaption");
+        if (figcaption) {
+          figcaption.style.display = "block";
+        }
+      });
+    }
+  });
 });

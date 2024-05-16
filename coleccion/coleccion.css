@@ -288,3 +288,127 @@ figcaption {
     object-fit: cover;
 }
 
+.footer {
+    font-family: Bebas Neue;
+    background-color: #454446;
+    width: 100%;
+    max-width: 100%; /* Ancho máximo para el footer */
+    margin: auto; /* Centra el footer en la página */
+    padding: 20px; /* Ajusta el espacio interno del footer */
+    height: 100%;
+    max-height: 100%;
+  }
+  .footer .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px;
+  }
+  .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 2%;
+    font-size: 20px;
+  }
+  .grupo-2{
+    padding: 1% 1%;
+    text-align: center;
+  }
+  @media screen and (max-width: 800px){
+    .footer .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+    }
+  }
+  .carts {
+    width: fit-content;
+    height: fit-content;
+    background-color: #454446;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  .linkPaginas{
+    text-decoration: none;
+    color:rgb(44, 44, 44);
+    display: block; /* Hace que los enlaces se muestren como bloques, ocupando toda la anchura disponible */
+    margin-bottom: 10px; 
+  }
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:not(:last-child) {
+    margin-right: 20px; /* Espacio entre los iconos */
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

@@ -284,26 +284,120 @@ figcaption {
   
   .carrito hr{
     margin-left: -12%;
-    width: 60%;
-    border-width: 3px;
+    width: 65.5%;
+    border-width: 2px;
   }
 
+  .producto {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-top: 10px; /* Ajusta el margen superior para separar los productos */
+    margin-left: -10%;
+  }
+
+  .producto img {
+    width: 100px; /* Ajusta el ancho de la imagen según tus necesidades */
+    margin-right: 10px; /* Ajusta el margen derecho para separar la imagen del texto */
+    position: relative;
+  }
+
+  .nombre-producto {
+    font-weight: bold; /* Hace que el texto sea negrita */
+  }
+
+  .eliminar {
+    color: red; /* Cambia el color del texto a rojo */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el texto */
+    margin-top: 3%; /* Ajusta el margen superior para separar el texto del nombre del producto */
+    margin-left: -17.6%;
+  }
+
+  .botonmas{
+    position: absolute;
+    top: 20%;
+    right: 42%;
+    border-radius:  25%; /*cambia la curvatura del boton*/  
+    background-color: #f9f9f9; /*Cambia el color de fondo de los botones a */
+    border-style: solid;
+  }
+
+  .botonmenos{
+    position: absolute;
+    top: 20%;
+    right: 45%;
+    border-radius:  25%; /*cambia la curvatura del boton*/  
+    background-color: #fcfcfc; /*Cambia el color de fondo de los botones a */
+    border-style: solid;
+  }
+
+  .precioProducto{
+    margin-top: 0%;
+    margin-left: 25%;
+  }
+
+  .eliminar2{
+    color: red; /* Cambia el color del texto a rojo */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el texto */
+    margin-top: 3%; /* Ajusta el margen superior para separar el texto del nombre del producto */
+    margin-left: -9.8%;
+  }
+
+  .botonmas2{
+    position: absolute;
+    top: 40%;
+    right: 42%;
+    border-radius:  25%; /*cambia la curvatura del boton*/  
+    background-color: #f9f9f9; /*Cambia el color de fondo de los botones a */
+    border-style: solid;
+  }
+
+  .botonmenos2{
+    position: absolute;
+    top: 40%;
+    right: 45%;
+    border-radius:  25%; /*cambia la curvatura del boton*/  
+    background-color: #fcfcfc; /*Cambia el color de fondo de los botones a */
+    border-style: solid;
+  }
+
+  .precioProducto2{
+    margin-top: 1%;
+    margin-left: 25%;
+  }
+
+  .envio{
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-top: 0%; /* Ajusta el margen superior para separar los productos */
+    margin-left: -10%;
+    background-color: #ccc;
+    border-radius: 1rem;
+  }
+
+  .textoEnvio{
+    margin-top: 9%; /* Ajusta el margen superior para separar el texto del nombre del producto */
+    margin-left: -3.1%;
+  }
+  .textoGratis{
+    margin-top: 0%; /* Ajusta el margen superior para separar el texto del nombre del producto */
+    margin-left: 25%;
+  }
+
+
 /*Resumen de compra*/
-
-
   .resumenCompra {
     background-color:#e9e7eb;
     border: 1px solid #454446;  /*Cambia el estilo del borde según tus preferencias*/ 
     padding: 10px;  /*Añade relleno para separar el contenido del borde */
     position: absolute;  /*Establece el posicionamiento absoluto para poder ajustar la posición con respecto al contenedor padre */
-    top: 80px;  /*Ajusta la posición verticalmente según tu diseño */
+    top: 25.5%;  /*Ajusta la posición verticalmente según tu diseño */
     right: 70px;  /*Ajusta la posición a la derecha del contenedor */
     border-radius: 1rem;
     /*height: calc(210% - 50px);*/ 
    }
 
   .boton1{
-    background-color: #0091ff; /*Cambia el color de fondo de los botones a rojo (#ff0000)*/
+    background-color: #0091ff; /*Cambia el color de fondo de los botones a */
     color: #ffffff; /*Cambia el color del texto a blanco (#ffffff) para que sea visible en el fondo rojo*/
     padding: 10px 20px; /*Ajusta el relleno para que los botones se vean bien */
     margin-right: 10px; /*Añade un margen a la derecha de los botones para separarlos*/

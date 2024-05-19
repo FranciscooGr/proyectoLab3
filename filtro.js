@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   select.addEventListener("change", function (event) {
     const valorSeleccionado = event.target.value;
     console.log("Elección:", valorSeleccionado);
-    const imagenesUrbanas = document.querySelectorAll(".cardUrbano");
-    const imagenesDeportivas = document.querySelectorAll(".cardDeportivo");
+    const imagenesUrbanas = document.querySelectorAll("#urbano");
+    const imagenesDeportivas = document.querySelectorAll("#deportivo");
 
     if (valorSeleccionado === "urbano") {
       // Ocultar todas las imágenes deportivas y sus figcaptions

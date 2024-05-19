@@ -1,0 +1,424 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* Establece una altura mínima del viewport */
+html, body {
+    height: 100%;
+}
+
+/* Establece el color de fondo general */
+body {
+    background-color: #8f8e90;
+    font-family: Bebas Neue; /* Cambiado a una fuente más común */
+}
+
+/* Establece el color del texto para todos los elementos */
+
+.bg-custom {
+    
+    background-color: #454446; /* Establece el color de fondo personalizado */
+}
+/* Estilos para la barra de navegación */
+.navbar-brand {
+    color: white; /* Cambiado a blanco para mayor contraste */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white; /* Establece el color del texto de los enlaces de navegación en blanco */
+}
+
+.custom-padding {
+    margin: 1% 1% 0; /* Ajusta los márgenes superior, derecho e izquierdo */
+    border-radius: 20px;
+}
+
+/* Estilos para el contenido principal */
+.main {
+  font-family:Bebas Neue;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 10%; /* Ajustado para adaptarse al nuevo margen superior */
+    margin-right: 0%;
+    margin-bottom: 0%;
+    
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    padding: 4% 0% 10% 10%; /* Ajustado para adaptarse al nuevo margen superior */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #8f8e90;
+}
+
+/* Estilos para el contenedor de imágenes */
+.filter{
+    display: none;
+    opacity: 0;
+    order: 1;
+}
+/* Estilos para el carrusel */
+.custom-carousel-container {
+    max-width: 100%; /* Ancho relativo para adaptarse a diferentes tamaños de pantalla */
+    height: 20%;
+     /* Centra el carrusel horizontalmente */
+
+    margin-top: 7%; /* Ajusta el margen superior */
+    border-radius: 30px;
+
+}
+.carousel-control-next{
+    margin-top: 10%;
+}
+.carousel-control-prev{
+    margin-top: 10%;
+}
+/* Estilos para la barra de búsqueda */
+.buscador {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+.card{
+  margin-top: 4%;
+}
+.card-filter {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.btn-buscar {
+    width: 60px;
+    height: 30px;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    background-color: #454446;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+}
+.btn-outline-success {
+    font-size: 1.5vw; /* Tamaño de fuente relativo al ancho de la ventana */
+}
+/* Estilos para el filtro */
+.custom-select select {
+    padding: 0.2%;
+    position: fixed;
+    width: 10%;  /* Utiliza el 20% del ancho de la ventana */
+    position: absolute; /* Cambiado a posición absoluta */
+    top: 1%; /* Ajusta la distancia desde la parte superior */
+    left: 1%; /* Ajusta la distancia desde la izquierda */
+    z-index: 999; /* Asegura que la barra esté por encima de otros elementos si hay superposiciones */
+    text-align: center; /* Alinea el texto al centro */
+    font-size: 100%; /* Tamaño de fuente relativo al ancho de la ventana */
+    height: auto; /* Altura automática */
+    border-radius: 30px; /* Radio de borde */
+}
+.filter{
+   display: none;
+    opacity: 0;
+    order: 1;
+}
+
+.btn-outline-success {
+    font-size: 1em; /* Tamaño de fuente relativo */
+}
+/*ofertas*/
+.p {
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+.discount {
+  color: rgb(37, 216, 52);
+}
+
+.subtitulos {
+  font-size: 30px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* Estilos para las imágenes */
+
+/* Estilos para los contenedores de métodos */
+.p {
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+.discount {
+  color: rgb(37, 216, 52);
+}
+
+.subtitulos {
+  font-size: 30px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* Estilos para las imágenes */
+
+/* Estilos para los contenedores de métodos */
+.methods {
+  display: flex;
+  flex-direction: column;
+  /* Apila los elementos verticalmente */
+  align-items: center;
+  border-radius: 30px;
+  width: 80%;
+  /* Establece un ancho máximo para evitar que los métodos se extiendan demasiado en pantallas grandes */
+  max-width: 350px;
+  margin: 0 auto 30px;
+  /* Añade espacio debajo de los métodos */
+}
+
+/* Media queries para hacer el diseño responsive */
+@media screen and (min-width: 768px) {
+  .grid-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas en pantallas medianas y grandes */
+    gap: 20px;
+  }
+
+  .methods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 350px;
+    margin: 0 auto 30px;
+  }
+
+  .methods img {
+    width: 80px;
+    /* Ajusta el ancho de las imágenes según sea necesario */
+    margin-bottom: 10px;
+    /* Espacio entre la imagen y el texto */
+  }
+
+  .col-md-4 {
+    margin-bottom: 2%;
+    /* Agrega espacio entre las cartas */
+  }
+}
+
+/*footer estilo */
+.footer {
+  font-family: Bebas Neue;
+  background-color: #454446;
+  width: 100%;
+  max-width: 100%; /* Ancho máximo para el footer */
+  margin: auto; /* Centra el footer en la página */
+  padding: 20px; /* Ajusta el espacio interno del footer */
+}
+.footer .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px;
+}
+.grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grupo-1 .box h2{
+  color: white;
+  margin-bottom: 2%;
+  font-size: 20px;
+}
+.grupo-2{
+  padding: 1% 1%;
+  text-align: center;
+}
+@media screen and (max-width: 800px){
+  .footer .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+.carts {
+  width: fit-content;
+  height: fit-content;
+  background-color: #454446;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+.linkPaginas{
+  text-decoration: none;
+  color:rgb(44, 44, 44);
+  display: block; /* Hace que los enlaces se muestren como bloques, ocupando toda la anchura disponible */
+  margin-bottom: 10px; 
+}
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.socialContainer:not(:last-child) {
+  margin-right: 20px; /* Espacio entre los iconos */
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* Carrito de compra */
+.maincarrito {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  padding: 4% 2% 10% 2%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: rgba(231, 223, 236, 0);
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  right: 0;
+  top: -5px;
+}
+
+.btn-cart::after {
+  content: attr(data-quantity);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s linear;
+  top: 105%;
+}
+
+.icon-cart {
+  width: 22px;
+  height: 22px;
+  transition: .2s linear;
+}
+
+.icon-cart path {
+  fill: rgb(8, 112, 240);
+  transition: .2s linear;
+}
+
+.btn-cart:hover > .icon-cart {
+  transform: scale(1.2);
+}
+
+.btn-cart:hover > .icon-cart path {
+  fill: rgb(34, 233, 84);
+}
+
+.btn-cart:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: 80%;
+}
+
+.quantity {
+  display: none;
+}
+
+.carrito-activo .icon-cart {
+  fill: rgb(34, 233, 84);
+}
+
+.carrito-activo .icon-cart path {
+  fill: rgb(34, 233, 84);
+}

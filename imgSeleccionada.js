@@ -5,5 +5,5 @@ function guardarImagen(urlImagen, idSelect) {
   // Llamar a preDescripcion después de almacenar el id
 
   // Redirige a la segunda página
-  window.location.href = "/despcripcionZapatillas.html";
+  window.location.href = "/despcripcion.html";
 }

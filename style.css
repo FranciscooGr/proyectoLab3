@@ -32,7 +32,7 @@ body {
 }
 
 .custom-padding {
-    margin: 1% 1% 0; /* Ajusta los márgenes superior, derecho e izquierdo */
+    margin: 1% 1% 1% 0; /* Ajusta los márgenes superior, derecho e izquierdo */
     border-radius: 20px;
 }
 
@@ -55,129 +55,198 @@ body {
 }
 /* Estilos para el contenedor de imágenes */
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap: 20px;
-    margin-top: 4%;
-    
-}
-
-.grid-column {
+@media (max-width: 800px) {
+  .navbar{
     display: flex;
     justify-content: center;
-    align-items: center; /* Añadimos esto para centrar verticalmente las imágenes */
-    border-radius: 30px;
-   
-}
-
-.figura img {
-  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-  height: auto; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
-  max-width: 100%; /* Asegura que la imagen no se expanda más allá de su tamaño original */
-}
-figcaption {
-    background-color: rgba(0, 0, 0, 0.5); /* Aquí el último valor (0.5) determina la opacidad, donde 0 es completamente transparente y 1 es completamente opaco */
-    color: white; /* Color del texto */
-    height: 20px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    
-    
-}
-
-.card {
-    margin-top: 0%;
+    align-items: center;
+    width: 100%;
     max-width: 100%;
-    height: 100%;
-    max-width: 400px;
-    border-radius: 30px;
-    overflow: hidden;
-}
-.cardUrbano {
-  margin-top: 0%;
-  max-width: 100%;
-  height: 100%;
-  max-width: 400px;
-  border-radius: 30px;
-  overflow: hidden;
-}
-.cardDeportivo {
-  margin-top: 0%;
-  max-width: 100%;
-  height: 100%;
-  max-width: 400px;
-  border-radius: 30px;
-  overflow: hidden;
-}
-.filter{
-    display: none;
+    margin-right: 0.5%;
+    background-color:#454446 ;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    text-align: center;
+    background-color:#454446 ;
+    width: 100%;
     
+  }
+  
+  .navbar-brand span {
+    font-size: 24px;
+    background-color:#454446 ;
+  }
+  .navbar-toggler-icon{
+    background-color:#454446 ;
+  }
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .custom-carousel-container {
+    padding-top: 60px;
+  }
+  .main{
+    max-width: 100%;
+  }
+  .cardsBusqueda{
+    margin-bottom: 10%;
+    margin-right: 2%;
+  }
+  .buscador{
+    top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .card {
+    width: 100%;
+  }
+  
+  .card-body h5 {
+    font-size: 18px;
+  }
+  
+  .card-body p {
+    font-size: 14px;
+  }
+  
+  .btn-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icon-cart {
+    width: 24px;
+    height: 24px;
+  }
+  .custom-select{
+    display: none;
+  }
+  .quantity {
+    font-size: 12px;
+  }
 }
+.contenedor-producto {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos al inicio */
+}
+
+.contenedor-imagen-titulo {
+  flex: 1;
+}
+
+.contenedor-informacion {
+  flex: 1;
+  padding-left: 20px; /* Espacio entre la imagen y los detalles */
+}
+
+.mainImg {
+  width: 500px; /* Ancho de la imagen */
+  max-width: 500px;
+  height: auto; /* Altura ajustada automáticamente */
+  border-radius: 20px;
+}
+
+.precio-container {
+  margin-bottom: 10px; /* Espacio entre el precio y la descripción */
+}
+
+
+.precio { /* Ancho del campo de precio */
+  font-size: 90px; /* Tamaño del texto del precio */
+  color: black;
+}
+
+
+.agregarCarrito {
+  align-self: flex-start; /* Alinear el botón al inicio */
+  border-radius: 20px;
+  margin-top: 16%;
+}
+/* Estilos para el contenedor de imágenes *
 /* Estilos para el carrusel */
 .custom-carousel-container {
-    max-width: 100%; /* Ancho relativo para adaptarse a diferentes tamaños de pantalla */
-    height: 20%;
-     /* Centra el carrusel horizontalmente */
+  max-width: 100%; /* Ancho relativo para adaptarse a diferentes tamaños de pantalla */
+  height: 20%;
+  /* Centra el carrusel horizontalmente */
 
-    margin-top: 7%; /* Ajusta el margen superior */
-    border-radius: 30px;
-
+  margin-top: 7%; /* Ajusta el margen superior */
+  border-radius: 30px;
 }
-.carousel-control-next{
-    margin-top: 10%;
+.carousel-control-next {
+  margin-top: 10%;
 }
-.carousel-control-prev{
-    margin-top: 10%;
+.carousel-control-prev {
+  margin-top: 10%;
 }
 /* Estilos para la barra de búsqueda */
 .buscador {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
 }
-
+.cardsBusqueda{
+  margin-top: 10%;
+}
+.card {
+  margin-top: 9%;
+}
 .card-filter {
-    width: 150px;
-    height: 30px;
-    border-radius: 20px 0 0 20px;
-    border: 1px solid #ccc;
-    padding: 0 10px;
-    font-size: 15px;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #ccc;
+  padding: 5%;
+  font-size: 15px;
 }
 
 .btn-buscar {
-    width: 60px;
-    height: 30px;
-    border-radius: 0 20px 20px 0;
-    border: none;
-    background-color: #454446;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    font-size: 15px;
+  width: 60px;
+  height: 30px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background-color: #454446;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  font-size: 15px;
 }
 .btn-outline-success {
-    font-size: 1.5vw; /* Tamaño de fuente relativo al ancho de la ventana */
+  font-size: 1.5vw; /* Tamaño de fuente relativo al ancho de la ventana */
 }
 /* Estilos para el filtro */
 .custom-select select {
-    padding: 0.2%;
-    position: fixed;
-    width: 10%;  /* Utiliza el 20% del ancho de la ventana */
-    position: absolute; /* Cambiado a posición absoluta */
-    top: 1%; /* Ajusta la distancia desde la parte superior */
-    left: 1%; /* Ajusta la distancia desde la izquierda */
-    z-index: 999; /* Asegura que la barra esté por encima de otros elementos si hay superposiciones */
-    text-align: center; /* Alinea el texto al centro */
-    font-size: 100%; /* Tamaño de fuente relativo al ancho de la ventana */
-    height: auto; /* Altura automática */
-    border-radius: 30px; /* Radio de borde */
+  padding: 0.2%;
+  position: fixed;
+  width: 10%; /* Utiliza el 20% del ancho de la ventana */
+  position: absolute; /* Cambiado a posición absoluta */
+  top: 1%; /* Ajusta la distancia desde la parte superior */
+  left: 1%; /* Ajusta la distancia desde la izquierda */
+  z-index: 999; /* Asegura que la barra esté por encima de otros elementos si hay superposiciones */
+  text-align: center; /* Alinea el texto al centro */
+  font-size: 100%; /* Tamaño de fuente relativo al ancho de la ventana */
+  height: auto; /* Altura automática */
+  border-radius: 30px; /* Radio de borde */
 }
-.filter{
-    display: none;
+.filter {
+  display: none;
+  opacity: 0;
+  order: 1;
+}
+
+.btn-outline-success {
+  font-size: 1em; /* Tamaño de fuente relativo */
 }
 
 .btn-outline-success {
@@ -216,37 +285,7 @@ figcaption {
   /* Añade espacio debajo de los métodos */
 }
 
-/* Media queries para hacer el diseño responsive */
-@media screen and (min-width: 768px) {
-  .grid-column {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Dos columnas en pantallas medianas y grandes */
-    gap: 20px;
-  }
 
-  .methods {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 30px;
-    width: 80%;
-    max-width: 350px;
-    margin: 0 auto 30px;
-  }
-
-  .methods img {
-    width: 80px;
-    /* Ajusta el ancho de las imágenes según sea necesario */
-    margin-bottom: 10px;
-    /* Espacio entre la imagen y el texto */
-  }
-
-  .col-md-4 {
-    margin-bottom: 2%;
-    /* Agrega espacio entre las cartas */
-  }
-}
 
 /*footer estilo */
 .footer {
@@ -255,7 +294,7 @@ figcaption {
   width: 100%;
   max-width: 100%; /* Ancho máximo para el footer */
   margin: auto; /* Centra el footer en la página */
-  padding: 20px; /* Ajusta el espacio interno del footer */
+  padding: 19px; /* Ajusta el espacio interno del footer */
 }
 .footer .grupo-1{
   width: 100%;
@@ -289,6 +328,9 @@ figcaption {
     grid-gap: 30px;
     padding: 35px 0px;
   }
+  .footer{
+    max-width: 100%;
+  }
 }
 .carts {
   width: fit-content;
@@ -297,9 +339,8 @@ figcaption {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 25px;
+ padding: 1% 0 1% 0;
   gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 .linkPaginas{
   text-decoration: none;

@@ -106,7 +106,9 @@ body {
 .card-body h5 {
   font-size: 18px;
 }
-
+.container-cards {
+  margin-top: 7%;
+}
 .card-body p {
   font-size: 14px;
 }
@@ -129,6 +131,18 @@ body {
 .quantity {
   font-size: 12px;
 }
+.paginas {
+  margin-left: 0; /* Elimina el margen izquierdo para mover todo a la izquierda */
+  margin-right: 0; /* Elimina el margen derecho */
+  width: 22%;
+  padding: 0 4% 0 5%;
+  max-width: 22%;
+  align-items: center;
+  margin: 5% 0 0 35%;
+  background-color: #454446;
+  border-radius: 15px;
+  color: white;
+  }
 }
 
 .col {
@@ -151,7 +165,7 @@ body {
 margin-left: 0; /* Elimina el margen izquierdo para mover todo a la izquierda */
 margin-right: 0; /* Elimina el margen derecho */
 width: 20%;
-max-width: 20%;
+max-width: 21%;
 align-items: center;
 margin: 5% 0 0 35%;
 background-color: #454446;

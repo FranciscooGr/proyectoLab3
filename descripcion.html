@@ -127,19 +127,19 @@
     <main class="main">
       <div class="contenedor-producto">
         <div class="contenedor-imagen-titulo">
-          <img src="" class="mainImg" id="urbano" alt="Zapatilla" />
+          <img src="" class="mainImg" id="mainImg" alt="Zapatilla" />
         </div>
         <div class="resumenCompra">
           <header>
             <h3 id="tituloProducto"></h3>
           </header>
           <div class="resumen-body">
-            <h4 id="precio"></h4>
+            <h4 id="precioSigno">$</h4><h4 id="precio"></h4>
             <hr>
             <p id="descripcion"></p>
           </div>
           <footer>
-            <button class="agregarCarrito">Agregar al carrito</button>
+            <button class="agregarCarrito" onclick="agregarAlCarrito()">Agregar al carrito</button>
             <a href="/index.html"><button class="volverMenu">Volver al menu</button></a>
           </footer>
         </div>

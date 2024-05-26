@@ -143,7 +143,12 @@ margin-top: 20px;
 cursor: pointer;
 border-radius: 15px;
 }
-
+#precioSigno {
+  display: inline-block; /* Hace que el elemento se muestre en línea con su contenido */
+}
+#precio {
+  display: inline-block; /* Hace que el elemento se muestre en línea con su contenido */
+}
 @media only screen and (max-width: 768px) {
 .navbar-brand {
     display: flex;

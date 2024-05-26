@@ -198,7 +198,8 @@ figcaption {
     text-decoration: none;
 }
 
-/* Carrito de compra */
+/* APARTADO DEL CARRITO DE COMPRA*/
+
 .maincarrito {
   position: relative;
   display: flex;
@@ -214,6 +215,7 @@ figcaption {
   margin-right: auto;
 }
 
+/* Boton del carrito de compra */
 .btn-cart {
   display: flex;
   align-items: center;
@@ -279,6 +281,7 @@ figcaption {
   fill: rgb(34, 233, 84);
 }
 
+/* Escrito sobre el carrito */
 .carrito h3 {
   margin-top: -3%;
   margin-left: -10%;
@@ -290,11 +293,12 @@ figcaption {
   border-width: 2px;
 }
 
+/* Estructura del producto */
 .producto {
   display: flex;
   align-items: center;
   margin-top: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
 }
 
@@ -308,14 +312,14 @@ figcaption {
   font-weight: bold;
   flex: 1;
 }
+
 .precioProducto, .precioProducto2 {
   margin-top: 0;
   margin-left: 25%;
   white-space: nowrap;
 }
 
-
-/*Botones de eliminar*/
+/* Botones de eliminar */
 .bin-button {
   display: flex;
   flex-direction: column;
@@ -330,27 +334,33 @@ figcaption {
   transition-duration: 0.3s;
   position: relative;
   overflow: hidden;
-  
+  margin-left: auto;
 }
+
 .bin-bottom {
   width: 15px;
   z-index: 2;
 }
+
 .bin-top {
   width: 17px;
   transform-origin: right;
   transition-duration: 0.3s;
   z-index: 2;
 }
+
 .bin-button:hover .bin-top {
   transform: rotate(45deg);
 }
+
 .bin-button:hover {
   background-color: rgb(255, 0, 0);
 }
+
 .bin-button:active {
   transform: scale(0.9);
 }
+
 .garbage {
   position: absolute;
   width: 14px;
@@ -359,9 +369,11 @@ figcaption {
   opacity: 0;
   transition: all 0.3s;
 }
+
 .bin-button:hover .garbage {
   animation: throw 0.4s linear;
 }
+
 @keyframes throw {
   from {
     transform: translate(-400%, -700%);
@@ -373,10 +385,8 @@ figcaption {
   }
 }
 
-/*-------------------*/
-
-/*Botones de mas y menos*/
-.buttonCantidad{
+/* Botones de mas y menos */
+.buttonCantidad {
   --bg: #cfc7c7;
   --hover-bg: #cfc7c75b;
   color: #000000;
@@ -386,8 +396,7 @@ figcaption {
   padding: 0.0em 0.7em;
   background: var(--bg);
   transition: 0.2s;
-  margin-left: 1%;
-  top: 5%;
+  margin-left: 5px;
 }
 
 .buttonCantidad:hover {
@@ -401,8 +410,8 @@ figcaption {
   transform: translate(0);
   box-shadow: none;
 }
-/*-----------------------*/
 
+/* Apartado del resumen de compra */
 .resumenCompra {
   background-color: #e9e7eb;
   border: 1px solid #454446;
@@ -444,17 +453,86 @@ figcaption {
   text-decoration: none;
 }
 
-/* Media Queries para adaptabilidad a móviles */
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .maincarrito {
+    margin-top: 5%;
+    padding: 5% 2% 15% 2%;
+  }
+
+  .carrito h3 {
+    margin-top: -3%;
+    margin-left: -5%;
+  }
+
+  .carrito hr {
+    margin-left: -6%;
+    width: 110%;
+  }
+  .buttonCantidad{
+    margin-bottom: 3%;
+    margin-left: 20%;
+    
+  }
+  .bin-button{
+    margin-right: 90%;
+
+  }
+}
+
 @media (max-width: 768px) {
   .maincarrito {
     margin-top: 5%;
-    padding: 6% 2% 8% 2%;
+    padding: 5% 2% 15% 2%;
+  }
+
+  .carrito h3 {
+    margin-top: -2%;
+    margin-left: -3%;
+    font-size: 18px;
+  }
+
+  .carrito hr {
+    margin-left: -4%;
+    width: 110%;
+  }
+
+  .producto img {
+    width: 80px;
+    margin-right: 5px;
+  }
+
+  .nombre-producto {
+    font-size: 14px;
+  }
+
+  .precioProducto, .precioProducto2 {
+    margin-left: 10%;
+    font-size: 14px;
+  }
+
+  .resumenCompra {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .boton1, .boton2 {
+    padding: 8px 15px;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .maincarrito {
+    margin-top: 20%;
+    padding: 6% 1% 20% 1%;
   }
 
   .carrito h3 {
     margin-top: -2%;
     margin-left: 0;
-    text-align: center;
+    font-size: 16px;
   }
 
   .carrito hr {
@@ -468,28 +546,30 @@ figcaption {
   }
 
   .producto img {
-    width: 80px;
-    margin: 0 auto 10px;
+    width: 70px;
+    margin-right: 0;
+    margin-bottom: 5px;
   }
 
   .nombre-producto {
-    margin-bottom: 10px;
-  }
-
-  .eliminar {
-    margin-left: 0;
+    font-size: 16px;
+    margin-top: 5px;
   }
 
   .precioProducto, .precioProducto2 {
     margin-left: 0;
+    font-size: 12px;
+    text-align: left;
   }
 
   .resumenCompra {
-    width: 90%;
+    width: 95%;
+    padding: 4%;
   }
 
   .boton1, .boton2 {
-    width: 90%;
-    margin: 10px auto;
+    padding: 6px 10px;
+    margin-top: 5px;
+    font-size: 12px;
   }
 }

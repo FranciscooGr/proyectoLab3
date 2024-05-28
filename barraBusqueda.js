@@ -30,5 +30,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Llamamos a la función searchFilters con los selectores adecuados (por ejemplo, #busqueda para el input y .figura para los elementos que se filtrarán)
-    searchFilters("#busqueda", ".figura");
+    searchFilters("#busqueda", ".card");
 });

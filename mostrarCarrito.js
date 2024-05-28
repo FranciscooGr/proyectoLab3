@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("precioProducto1").textContent = precio;
     document.getElementById("nombreProducto1").textContent = nombre; 
     document.querySelector("#imagenProducto1").src = urlImagen;
-
+    
     const agregarZapatilla = document.getElementById("agregarZapatilla");
     const restarZapatilla = document.getElementById("restarZapatilla"); 
         agregarZapatilla.addEventListener("click", function(){
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let precioSuma = precioFinal(contador); 
             precioSuma = precioSuma.toString();  
             document.getElementById("precioProducto1").textContent = precioSuma;
-            document.getElementById("cantidadZapatillas").textContent = contador; 
+            document.getElementById("data-quantity").textContent = contador; 
         });
         restarZapatilla.addEventListener("click", function(){
             contador = contador - 1; 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("cantidadZapatillas").textContent = contador; 
             }
             if(contador < 1){
-                eliminarZapatilla();
+                
             }
         });
         function precioFinal(contadorSuma){

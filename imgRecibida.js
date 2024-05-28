@@ -169,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }),
 
     ];
+    
   function preDescripcion() {
     for (let x = 0; x < productos.length; x++) {
       if (idSelect === productos[x].id) {
@@ -195,6 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
+  
   const informacionProducto = preDescripcion();
   console.log(" id selkeccionado", idSelect);
   const precio = informacionProducto.precio;

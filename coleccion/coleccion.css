@@ -21,7 +21,7 @@ body {
   margin-bottom: 0%; /* Elimina el margen inferior */
   height: auto; /* Permite que la altura del elemento se ajuste automáticamente según el contenido */
   width: auto; /* Permite que el ancho del elemento se ajuste automáticamente según el contenido */
-  padding: 4% 5% 10% 5%; /* Ajusta el espacio interno del elemento */
+  padding: 5% 5% 5% 5%; /* Ajusta el espacio interno del elemento */
   border-top-left-radius: 30px; /* Establece el radio de borde superior izquierdo */
   border-top-right-radius: 30px; /* Establece el radio de borde superior derecho */
   background-color: #8f8e90; /* Establece el color de fondo */
@@ -65,29 +65,35 @@ body {
 }
 
 figcaption {
-  background-color: rgba(0, 0, 0, 0.5); /* Aquí el último valor (0.5) determina la opacidad, donde 0 es completamente transparente y 1 es completamente opaco */
+  position: absolute; /* Posiciona el texto de forma absoluta dentro del contenedor */
+  top: 0; /* Posiciona el texto en la parte superior del contenedor */
+  left: 0; /* Posiciona el texto en la parte izquierda del contenedor */
+  width: 100%; /* Asegura que el texto ocupe todo el ancho del contenedor */
+  height: 100%; /* Asegura que el texto ocupe toda la altura del contenedor */
+  display: flex; /* Usa flexbox para centrar el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
   color: white; /* Color del texto */
   font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
   font-size: 24px; /* Cambia el tamaño del texto */
   padding: 5px 10px; /* Añade espacio interno alrededor del texto */
   margin: 0; /* Elimina el margen predeterminado */
-  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-  overflow: hidden; /* Oculta cualquier texto que desborde del ancho máximo */
-  text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto que desborde */
+  text-align: center; /* Centra el texto */
 }
 
-
 .card {
+  position: relative;
   margin-top: auto;
   height: 100%;
   max-width: 400px;
-  max-height: 500px;
+  max-height: 700px;
   border-radius: 60px;
   overflow: hidden;
 }
 .card-image {
-  width: 100%; /* Establece el ancho al 100% del contenedor */
-  height: 200px; /* Establece una altura fija para todas las imágenes */
+  width: 400px; /* Establece el ancho al 100% del contenedor */
+  height: 600px; /* Establece una altura fija para todas las imágenes */
   object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
 }
 

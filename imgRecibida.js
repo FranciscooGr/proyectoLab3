@@ -167,7 +167,60 @@ document.addEventListener("DOMContentLoaded", function () {
       precio: 91999,
       descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
     }),
-
+    (zapatilla28 = {
+      id: "ofertas1",
+      nombre: "Air Jordan 1 Mid SE Craft",
+      precio: 194999,
+      descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+    }),
+    (zapatilla29 = {
+      id: "ofertas2",
+      nombre: "Air Jordan 1 Mid SE Deluxe",
+      precio: 194999,
+      descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+    }),
+    (zapatilla30 = {
+      id: "ofertas3",
+      nombre: "Air Jordan 3 High SE Raft",
+      precio: 151999,
+      descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+    }),
+    (zapatilla31 = {
+      id: "ofertas4",
+      nombre: "Jordan Nu Retro 1 Low t",
+      precio: 194999,
+      descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+    }),
+    (zapatilla32 = {
+      id: "ofertas5",
+      nombre: "Air Jordan 1 High OG Mauve",
+      precio: 194999,
+      descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+    }),
+    (zapatilla33 = {
+      id: "ofertas6",
+      nombre: "Adidas Daily 3.0 ",
+      precio: 68799,
+      descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+    }),
+    (zapatilla34 = {
+      id: "ofertas7",
+      nombre: "Zapatillas Rivalry Low ",
+      precio: 104000,
+      descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+    }),
+    (zapatilla35 = {
+      id: "ofertas8",
+      nombre: "Zapatillas Ultraboost 1.0 ",
+      precio: 136500,
+      descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+    }),
+    (zapatilla36 = {
+      id: "ofertas9",
+      nombre: "Adidas Daily 3.0",
+      precio: 96000,
+      descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+    }),
     ];
     
   function preDescripcion() {

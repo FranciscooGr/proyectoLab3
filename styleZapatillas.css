@@ -29,7 +29,7 @@ body {
 }
 
 .custom-padding {
-margin: 1% 1% 1% 0; /* Ajusta los márgenes superior, derecho e izquierdo */
+margin: 1% 1% 1% 1%; /* Ajusta los márgenes superior, derecho e izquierdo */
 border-radius: 20px;
 }
 

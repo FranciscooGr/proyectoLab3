@@ -1,37 +1,71 @@
+<?php
+    // Conectar a la base de datos
+    $servidor = "localhost";
+    $usuario = "root";
+    $clave = "";
+    $baseDeDatos = "formularios";
+
+    $enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
+
+    if (!$enlace) {
+        die("Error en la conexión con el servidor: " . mysqli_connect_error());
+    }
+
+    // Procesar el formulario
+    if (isset($_POST['registrarse'])) {
+        $username = $_POST["username"];
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+        $confirmPassword = $_POST["confirm-password"];
+        $id = rand(1, 2000);
+
+        if ($password === $confirmPassword) {
+            $insertarDatos = "INSERT INTO datos (Nombre_usuario, Correo, Contraseña, ID) VALUES ('$username', '$email', '$password', '$id')";
+            $ejecutarInsertar = mysqli_query($enlace, $insertarDatos);
+
+            if ($ejecutarInsertar) {
+                echo "Registro exitoso";
+            } else {
+                echo "Error: " . mysqli_error($enlace);
+            }
+        } else {
+            echo "Las contraseñas no coinciden.";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Registro</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleCuenta.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/738b60d149.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <style>
+        body {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #858585;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #ffffff00;
+        }
+    </style>
 </head>
-<style>
-    body {
-        margin-top: 20px; 
-        /* Basic dimensions and centering */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        /* Dark mode colors and gradient */
-        background: #858585; /* Fallback for browsers that don't support gradients */
-        font-family: Arial, sans-serif;
-    }
-    form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ffffff00; /* Background color */
-    }
-</style>
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-custom custom-padding fixed-top">
@@ -71,13 +105,13 @@
         </nav>
     </header>
     <h1><img src="assets-2/imgLogo.png" style="height: 120px;"></h1>
-    <form id="register-form" style="font-family:'Bebas Neue'; font-size: 15px">
+    <form id="register-form" style="font-family:'Bebas Neue'; font-size: 15px" method="POST" action="registro.php">
         <h2 style="font-family:'Bebas Neue'; font-size: 50px">Registro</h2>
-        <input type="text" id="username" placeholder="Nombre de usuario" required>
-        <input type="email" id="email" placeholder="Correo electrónico" required>
-        <input type="password" id="password" placeholder="Contraseña" required>
-        <input type="password" id="confirm-password" placeholder="Confirmar contraseña" required>
-        <input type="submitcuenta" value="Registrarse">
+        <input type="text" name="username" id="username" placeholder="Nombre de usuario" required>
+        <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmar contraseña" required>
+        <input type="submit" name="registrarse" value="Registrarse">
     </form>
 
     <script>
@@ -91,6 +125,5 @@
             }
         });
     </script>
-    
 </body>
 </html>

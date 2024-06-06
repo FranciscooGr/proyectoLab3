@@ -232,7 +232,38 @@ font-size: 15px;
 .btn-outline-success {
 font-size: 1.5vw; /* Tamaño de fuente relativo al ancho de la ventana */
 }
+#cart-container{
+  max-width: 500px;
+  margin: auto;
+}
 
+.tarjeta-producto{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  gap: 20px;
+}
+
+.tarjeta-producto img{
+  height: 100%;
+}
+
+.tarjeta-producto h3{
+  width: 130px;
+}
+.tarjeta-producto div{
+  background-color: var(--color-acento-claro);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+#totales{
+  text-align: center;
+}
+
+#carrito-vacio{
+  text-align: center;
+}
 /* Estilos para el filtro */
 .custom-select select {
 padding: 0.2%;
@@ -278,8 +309,24 @@ font-size: 30px;
 text-align: center;
 margin: 30px auto;
 }
-
-/* Estilos para las imágenes */
+boton {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: dodgerblue;
+  color: white;
+  border-radius: 4px;
+ }
+ 
+ boton:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
+ 
+ boton:active {
+  transform: translate(0em, 0.2em);
+ }
 
 /* Estilos para los contenedores de métodos */
 .methods {

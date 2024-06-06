@@ -12,6 +12,9 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/738b60d149.js" crossorigin="anonymous"></script>
+    <script src="/js/agregarCarrito.js"></script>
+<script src="/filtro.js"></script>
+<script src="/barraBusqueda.js"></script>
 </head>
     <body>
         <header class="header">
@@ -113,7 +116,7 @@
             <div class="card-body text-center">
                 <h5 class="card-title"> Zapato Bowen</h5>
                 <p class="card-text">109.999$</p>
-                <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-10-formal.jpg', 'formal1')" class="btn btn-primary">Ver mas</a>
+                <boton onclick="agregarAlCarrito('formal1')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
             </div>
         </figure>
         </div>
@@ -123,7 +126,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Zapato cuero Zara</h5>
             <p class="card-text">79.000$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-11-formal.jpg', 'formal2')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('formal2')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
         </figure>
         </div>
@@ -133,7 +136,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Adidas Run Falcon</h5>
             <p class="card-text">93.999$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-12-deportivo.jpg', 'deportivo4')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('deportivo4')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
         </figure>
         </div>
@@ -146,7 +149,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Zapato cuero Marron Zara</h5>
             <p class="card-text">91.999$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-13-formal.jpg', 'formal3')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('formal3')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
           </figure>
         </div>
@@ -156,7 +159,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Vans urban s1</h5>
             <p class="card-text">68.000$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-14-urbana.jpg', 'urbano7')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('urbano7')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
         </figure>
         </div>
@@ -166,7 +169,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Adidas Adistar 1.0</h5>
             <p class="card-text">64.999$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-15-deportivo.jpg', 'deportivo5')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('deportivo5')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
         </figure>
         </div>
@@ -179,7 +182,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Adidas Switch Run</h5>
             <p class="card-text">74.999$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-16-deportivo.jpg', 'deportivo6')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('deportivo6')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
         </figure>
         </div>
@@ -189,7 +192,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Adidas Deerupt runner</h5>
             <p class="card-text">120.999$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-17-deportivo.png', 'deportivo7')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('deportivo7')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span></boton>
           </div>
         </figure>
         </div>
@@ -199,7 +202,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Nike air max TW</h5>
             <p class="card-text"> 71.000$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-18-deportivo.jpg', 'deportivo8')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('deportivo8')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
         </figure>
         </div>
@@ -262,8 +265,6 @@
         <small>&copy;2024 <b>Slee down</b> -Todos Los Derechos Reservados.</small>
     </div>
 </footer>
-<script src="/filtro.js"></script>
-<script src="/imgSeleccionada.js"> </script>
-<script src="/barraBusqueda.js"></script>
+
 </body>
 </html>

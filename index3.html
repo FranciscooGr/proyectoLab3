@@ -12,6 +12,9 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/738b60d149.js" crossorigin="anonymous"></script>
+    <script src="/js/agregarCarrito.js"></script>
+<script src="/filtro.js"></script>
+<script src="/barraBusqueda.js"></script>
 </head>
     <body>
         <header class="header">
@@ -113,7 +116,7 @@
             <div class="card-body text-center">
                 <h5 class="card-title"> DC pure shark</h5>
                 <p class="card-text">107.999$</p>
-                <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-19-urbana.jpg', 'urbano8')" class="btn btn-primary">Ver mas</a>
+                <boton onclick="agregarAlCarrito('urbano8')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
             </div>
         </figure>
         </div>
@@ -123,7 +126,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Dc pure wtn</h5>
             <p class="card-text">115.000$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-20-urbana.jpg', 'urbano9')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('urbano9')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
         </figure>
         </div>
@@ -133,8 +136,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">dc skyline</h5>
             <p class="card-text">99.000$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-21-urbana.jpg', 'urbano10')" class="btn btn-primary">Ver mas</a>
-          </div>
+            <boton onclick="agregarAlCarrito('urbano10')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>          </div>
         </figure>
         </div>
       </div>
@@ -146,7 +148,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Nike Air max system</h5>
             <p class="card-text">97.999$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-22-urbana.jpg', 'urbano11')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('urbano11')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>          
           </div>
           </figure>
         </div>
@@ -156,7 +158,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Nike Air max 90</h5>
             <p class="card-text">84.999$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-23-deportivo.jpg', 'deportivo9')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('deportivo9')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
         </figure>
         </div>
@@ -166,8 +168,8 @@
           <div class="card-body text-center">
             <h5 class="card-title">Nike Air Max 12 Se</h5>
             <p class="card-text">120.999$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-24-deportivo.jpg', 'deportivo10')" class="btn btn-primary">Ver mas</a>
-          </div>
+            <boton onclick="agregarAlCarrito('deportivo10')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                    </div>
         </figure>
         </div>
       </div>
@@ -179,7 +181,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">nike air max excee</h5>
             <p class="card-text">104.999$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-25-urbana.png', 'urbano12')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('urbano12')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
         </figure>
         </div>
@@ -189,7 +191,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Nike air max gore-tex</h5>
             <p class="card-text">95.000$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-26-urbana.jpg', 'urbano13')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('urbano13')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
         </figure>
         </div>
@@ -199,7 +201,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Nike air max ap</h5>
             <p class="card-text"> 88.000$</p>
-            <a href="/descripcion.html" onclick="guardarImagen('/assets-2/img-27-deportivo.jpg', 'deportivo11')" class="btn btn-primary">Ver mas</a>
+            <boton onclick="agregarAlCarrito('deportivo11')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
           </div>
         </figure>
         </div>
@@ -262,8 +264,6 @@
         <small>&copy;2024 <b>Slee down</b> -Todos Los Derechos Reservados.</small>
     </div>
 </footer>
-<script src="/filtro.js"></script>
-<script src="/imgSeleccionada.js"> </script>
-<script src="/barraBusqueda.js"></script>
+
 </body>
 </html>

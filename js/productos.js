@@ -1,271 +1,300 @@
-
 const productos = [
-  (zapatilla1 = {
+  {
     id: "urbano1",
     nombre: "Nike Court Legion",
     precio: 129999,
-    img : "/assets-2/img-1-urbana.jpg",
-    descripcion: "Con un estilo icónico y detalles de diseño innovadores, las zapatillas urbanas Nike son la elección perfecta para aquellos que buscan destacar en la jungla urbana.",
-  }),
-  (zapatilla2 = {
+    img: "/assets-2/img-1-urbana.jpg",
+    descripcion:
+      "Con un estilo icónico y detalles de diseño innovadores, las zapatillas urbanas Nike son la elección perfecta para aquellos que buscan destacar en la jungla urbana.",
+  },
+  {
     id: "urbano2",
     nombre: "Nike Court Vision",
     precio: 70000,
-    img : "/assets-2/img-2-urbana.jpg",
-    descripcion: "Explora la ciudad con confianza con las zapatillas urbanas Nike, diseñadas para brindarte comodidad y estilo en cada paso que des.",
-  }),
-  (zapatilla3 = {
+    img: "/assets-2/img-2-urbana.jpg",
+    descripcion:
+      "Explora la ciudad con confianza con las zapatillas urbanas Nike, diseñadas para brindarte comodidad y estilo en cada paso que des.",
+  },
+  {
     id: "urbano3",
     nombre: "Nike Court Vision Mid",
     precio: 200000,
-    img : "/assets-2/img-3-urbana.jpg",
-    descripcion:"Las zapatillas urbanas Nike están diseñadas para proporcionarte un ajuste cómodo y un estilo inigualable, sin importar adónde te lleve la ciudad.",
-  }),
-  (zapatilla4 = {
+    img: "/assets-2/img-3-urbana.jpg",
+    descripcion:
+      "Las zapatillas urbanas Nike están diseñadas para proporcionarte un ajuste cómodo y un estilo inigualable, sin importar adónde te lleve la ciudad.",
+  },
+  {
     id: "urbano4",
     nombre: "Nike Air Force 1",
     precio: 97999,
-    img : "/assets-2/img-4-urbana.jpg",
-    descripcion: "Innovador sistema de cordones ajustables con cierre por contacto para un ajuste personalizado.",
-  }),
-  (zapatilla5 = {
+    img: "/assets-2/img-4-urbana.jpg",
+    descripcion:
+      "Innovador sistema de cordones ajustables con cierre por contacto para un ajuste personalizado.",
+  },
+  {
     id: "urbano5",
     nombre: "Nike Air Force 1 07 SE Mujer",
     precio: 82000,
-    img : "/assets-2/img-5-urbana.jpg",
-    descripcion: "Con su combinación de estilo audaz y tecnología de vanguardia, las zapatillas urbanas Nike te permiten expresar tu individualidad mientras exploras la ciudad.",
-  }),
-  (zapatilla6 = {
+    img: "/assets-2/img-5-urbana.jpg",
+    descripcion:
+      "Con su combinación de estilo audaz y tecnología de vanguardia, las zapatillas urbanas Nike te permiten expresar tu individualidad mientras exploras la ciudad.",
+  },
+  {
     id: "urbano6",
     nombre: "Nike Air Max 97 Se Ncps Mujer",
     precio: 68999,
-    img : "/assets-2/img-6-urbana.jpg",
-    descripcion: "Construcción con materiales de alta calidad, incluyendo textil y gamuza para una apariencia elegante y resistente.",
-  }),
-  (zapatilla7 = {
+    img: "/assets-2/img-6-urbana.jpg",
+    descripcion:
+      "Construcción con materiales de alta calidad, incluyendo textil y gamuza para una apariencia elegante y resistente.",
+  },
+  {
     id: "urbano7",
     nombre: "Vans urban s1",
-    precio: 68.000,
-    img : "/assets-2/img-14-urbana.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla8 = {
+    precio: 68.0,
+    img: "/assets-2/img-14-urbana.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "urbano8",
     nombre: "DC pure shark",
     precio: 107999,
-    img : "/assets-2/img-19-urbana.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla9 = {
+    img: "/assets-2/img-19-urbana.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "urbano9",
     nombre: "Dc pure wtn",
     precio: 115000,
-    img : "/assets-2/img-20-urbana.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla10 = {
+    img: "/assets-2/img-20-urbana.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "urbano10",
     nombre: "dc skyline",
     precio: 99000,
-    img : "/assets-2/img-21-urbana.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla11 = {
+    img: "/assets-2/img-21-urbana.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "urbano11",
     nombre: "Nike Air max system",
     precio: 97.999,
-    img : "/assets-2/img-22-urbana.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla12 = {
+    img: "/assets-2/img-22-urbana.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "urbano12",
     nombre: "nike air max excee",
     precio: 104999,
-    img : "/assets-2/img-25-urbana.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla13 = {
+    img: "/assets-2/img-25-urbana.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "urbano13",
     nombre: "Nike air max gore-tex",
-    precio: 95.000,
-    img : "/assets-2/img-26-urbana.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla14 = {
+    precio: 95.0,
+    img: "/assets-2/img-26-urbana.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "deportivo1",
     nombre: "Adidas Duramo One",
     precio: 74000,
-    img : "/assets-2/img-7-deportivo.jpg",
-    descripcion:"Suela tipo cupsole de caucho que proporciona tracción y estabilidad en diversas superficies.",
-  }),
-  (zapatilla15 = {
+    img: "/assets-2/img-7-deportivo.jpg",
+    descripcion:
+      "Suela tipo cupsole de caucho que proporciona tracción y estabilidad en diversas superficies.",
+  },
+  {
     id: "deportivo2",
     nombre: "Adidas Zero",
     precio: 140000,
-    img : "/assets-2/img-8-deportivo.jpg",
-    descripcion: "Suela de caucho tipo cupsole diseñada para ofrecer un excelente agarre y durabilidad en cada paso.",
-  }),
-  (zapatilla16 = {
+    img: "/assets-2/img-8-deportivo.jpg",
+    descripcion:
+      "Suela de caucho tipo cupsole diseñada para ofrecer un excelente agarre y durabilidad en cada paso.",
+  },
+  {
     id: "deportivo3",
     nombre: "Adidas Adizero Boston",
     precio: 81000,
-    img : "/assets-2/img-9-deportivo.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla17 = {
+    img: "/assets-2/img-9-deportivo.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "deportivo4",
     nombre: "Adidas Run Falcon",
     precio: 93999,
-    img : "/assets-2/img-12-deportivo.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla18 = {
+    img: "/assets-2/img-12-deportivo.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "deportivo5",
     nombre: "Adidas Adistar 1.0",
     precio: 64999,
-    img : "/assets-2/img-15-deportivo.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla19 = {
+    img: "/assets-2/img-15-deportivo.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "deportivo6",
     nombre: "Adidas Switch Run",
     precio: 74999,
-    img : "/assets-2/img-16-deportivo.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla20 = {
+    img: "/assets-2/img-16-deportivo.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "deportivo7",
     nombre: "Adidas Deerupt runner",
     precio: 120999,
-    img : "/assets-2/img-17-deportivo.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla21 = {
+    img: "/assets-2/img-17-deportivo.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "deportivo8",
     nombre: "Nike air max TW",
     precio: 71000,
-    img : "/assets-2/img-18-deportivo.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla22 = {
+    img: "/assets-2/img-18-deportivo.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "deportivo9",
     nombre: "Nike Air max 90",
     precio: 84999,
-    img : "/assets-2/img-23-deportivo.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla23 = {
+    img: "/assets-2/img-23-deportivo.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "deportivo10",
     nombre: "Nike Air Max 12 Se",
     precio: 81000,
-    img : "/assets-2/img-24-deportivo.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla24 = {
+    img: "/assets-2/img-24-deportivo.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "deportivo11",
     nombre: "Nike air max ap",
     precio: 88000,
-    img : "/assets-2/img-27-deportivo.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla25 = {
+    img: "/assets-2/img-27-deportivo.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "formal1",
     nombre: "Zapato Bowen",
     precio: 109999,
-    img : "/assets-2/img-10-formal.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla26= {
+    img: "/assets-2/img-10-formal.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "formal2",
     nombre: "Zapato cuero Zara",
     precio: 79000,
-    img : "/assets-2/img-11-formal.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla27 = {
+    img: "/assets-2/img-11-formal.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "formal3",
     nombre: "Zapato cuero Marron Zara",
     precio: 91999,
-    img : "/assets-2/img-13-formal.jpg",
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla28 = {
+    img: "/assets-2/img-13-formal.jpg",
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "ofertas1",
     nombre: "Air Jordan 1 Mid SE Craft",
     precio: 194999,
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla29 = {
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "ofertas2",
     nombre: "Air Jordan 1 Mid SE Deluxe",
     precio: 194999,
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla30 = {
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "ofertas3",
     nombre: "Air Jordan 3 High SE Raft",
     precio: 151999,
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla31 = {
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "ofertas4",
     nombre: "Jordan Nu Retro 1 Low t",
     precio: 194999,
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla32 = {
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "ofertas5",
     nombre: "Air Jordan 1 High OG Mauve",
     precio: 194999,
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla33 = {
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "ofertas6",
     nombre: "Adidas Daily 3.0 ",
     precio: 68799,
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla34 = {
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "ofertas7",
     nombre: "Zapatillas Rivalry Low ",
     precio: 104000,
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla35 = {
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "ofertas8",
     nombre: "Zapatillas Ultraboost 1.0 ",
     precio: 136500,
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  (zapatilla36 = {
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+  {
     id: "ofertas9",
     nombre: "Adidas Daily 3.0",
     precio: 96000,
-    descripcion: " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
-  }),
-  ];
+    descripcion:
+      " Sistema de atado de cordones con tira ajustable de cierre por contacto Exterior en material textil y gamuza  Forro interno textil Suela tipo cupsole de caucho",
+  },
+];
 
-  const productosSeleccionados = JSON.parse(localStorage.getItem('idsSeleccionados')) || [];
+const productosSeleccionados = JSON.parse(localStorage.getItem('idsSeleccionados')) || [];
 // Función para agregar un producto seleccionado
 function agregarProductoSeleccionado(idSeleccionado) {
-  console.log("funciona");
   const productoEncontrado = productos.find((producto) => producto.id === idSeleccionado);
+  console.log(productoEncontrado);
   if (productoEncontrado) {
-    console.log("aca" +productosSeleccionados);
     productosSeleccionados.push(idSeleccionado);
     localStorage.setItem('idsSeleccionados', JSON.stringify(productosSeleccionados));
     actualizarCarrito();
-    for(let x=0; x<productosSeleccionados.length; x++){
-      for(let j=0; j<productos.length; j++){
-        if(productosSeleccionados[x].id === productos[j].id){
-          console.log("Se encontro uno igual"+productosSeleccionados[x]+ " mesi"+productos[j]);
-        }
-      }
-    }
   } 
   else {
     console.log(`Producto con ID ${idSeleccionado} no encontrado.`);
   }
+  
+  const exist = productosSeleccionados.some(productos)
 }
 
 // Función para eliminar un producto seleccionado
@@ -321,7 +350,8 @@ function actualizarCarrito() {
       botonEliminar.addEventListener('click', () => {
         eliminarProductoSeleccionado(productoEncontrado.id);
       });
-      agregarZapatilla.addEventListener('click', () => {     
+      agregarZapatilla.addEventListener('click', () => {  
+        console.log(productosSeleccionados);
       })
       restarZapatilla.addEventListener('click', () => {            
       })

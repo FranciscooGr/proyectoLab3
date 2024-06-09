@@ -15,7 +15,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-<script src="/js/agregarCarrito.js"></script>
+<script src="/js/agregarAlCarrito.js"></script>
 <script src="/filtro.js"></script>
 <script src="/barraBusqueda.js"></script>
 
@@ -47,7 +47,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="carrito.html">
-                            <button data-quantity="0" class="btn-cart">
+                            <button  class="btn-cart" id="cantidadDeZapatillas">
                                 <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
                                     <title>icon-cart </title>
                                     <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
@@ -111,101 +111,101 @@
     <div class="container-cards">
         <div class="row" style="max-height: 40%; justify-content: flex-start;">
             <div class="col">
-                <div class="card" style="width: 18rem;" id="urbano">
+                <div class="card" style="width: 18rem;" >
                     <figure class="cardsBusqueda">
-                        <img src="/assets-2/img-1-urbana.jpg" class="card-img-top" alt="Imagen 1" id="urbano1">
+                        
+                        <img src="/assets-2/img-1-urbana.jpg" class="card-img-top" alt="Imagen 1" >
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Court Legion</h5>
-                            <p class="card-text">129.999$</p>
-                            <boton onclick="agregarAlCarrito('urbano1')" id="agregarCarrito" class="btn btn-primary" > <span>agregar al carrito</span>
-                            </boton>
-                            
+                            <p class="card-text">129999$</p>
+                            <boton class="btn btn-primary"><span>agregar al carrito</span> </boton>
                         </div>
+                        
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" id="urbano">
+                <div class="card" style="width: 18rem;" >
                     <figure class="cardsBusqueda">
-                        <img src="/assets-2/img-2-urbana.jpg" class="card-img-top" alt="Imagen 2" id="urbano2">
+                        <img src="/assets-2/img-2-urbana.jpg" class="card-img-top" alt="Imagen 2" >
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Court Vision</h5>
-                            <p class="card-text">70.000$</p>
-                            <boton onclick="agregarAlCarrito('urbano2')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                            <p class="card-text">70000$</p>
+                            <boton class="btn btn-primary"><span>agregar al carrito</span> </boton>
                         </div>
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" id="urbano">
+                <div class="card" style="width: 18rem;" >
                     <figure class="cardsBusqueda">
-                        <img src="/assets-2/img-3-urbana.jpg" class="card-img-top" alt="Imagen 3" id="urbano3">
+                        <img src="/assets-2/img-3-urbana.jpg" class="card-img-top" alt="Imagen 3" >
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Court Vision Mid</h5>
-                            <p class="card-text">200.000$</p>
-                            <boton onclick="agregarAlCarrito('urbano3')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                            <p class="card-text">200000$</p>
+                            <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
                         </div>
                     </figure>
                 </div>
             </div>
             <!-- Aquí empieza la segunda columna -->
             <div class="col">
-                <div class="card" style="width: 18rem;" id="urbano">
+                <div class="card" style="width: 18rem;" >
                     <figure class="cardsBusqueda">
                         <img src="/assets-2/img-4-urbana.jpg" class="card-img-top" alt="Imagen 4" id="urbano4">
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Air Force 1</h5>
-                            <p class="card-text">97.999$</p>
-                            <boton onclick="agregarAlCarrito('urbano4')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                            <p class="card-text">97999$</p>
+                            <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
                         </div>
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" id="urbano">
+                <div class="card" style="width: 18rem;" >
                     <figure class="cardsBusqueda">
                         <img src="/assets-2/img-5-urbana.jpg" class="card-img-top" alt="Imagen 5" id="urbano5">
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Air Force 1 07 SE Mujer</h5>
-                            <p class="card-text">82.000$</p>
-                            <boton onclick="agregarAlCarrito('urbano5')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                            <p class="card-text">82000$</p>
+                            <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
                         </div>
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" id="urbano">
+                <div class="card" style="width: 18rem;" >
                     <figure class="cardsBusqueda">
                         <img src="/assets-2/img-6-urbana.jpg" class="card-img-top" alt="Imagen 6" id="urbano6">
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Air Max 97 Se Ncps Mujer</h5>
-                            <p class="card-text">68.999$</p>
-                            <boton onclick="agregarAlCarrito('urbano6')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                            <p class="card-text">68999$</p>
+                            <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
                         </div>
                     </figure>
                 </div>
             </div>
             <!-- Aquí empieza la tercera columna -->
             <div class="col">
-                <div class="card" style="width: 18rem;" id="deportivo">
+                <div class="card" style="width: 18rem;" >
                     <figure class="cardsBusqueda">
                         <img src="/assets-2/img-7-deportivo.jpg" class="card-img-top" alt="Imagen 7" id="deportivo1">
                         <div class="card-body text-center">
                             <h5 class="card-title">Adidas Duramo One</h5>
-                            <p class="card-text">74.000$</p>
-                            <boton onclick="agregarAlCarrito('deportivo1')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                            <p class="card-text">74000$</p>
+                            <boton class="btn btn-primary"><span>agregar al carrito</span> </boton>
                         </div>
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" id="deportivo">
+                <div class="card" style="width: 18rem;" >
                     <figure class="cardsBusqueda">
                         <img src="/assets-2/img-8-deportivo.jpg" class="card-img-top" alt="Imagen 8" id="deportivo2">
                         <div class="card-body text-center">
                             <h5 class="card-title">Adidas Zero</h5>
-                            <p class="card-text">140.000$</p>
-                            <boton onclick="agregarAlCarrito('deportivo2')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                            <p class="card-text">140000$</p>
+                            <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
                         </div>
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" id="deportivo">
+                <div class="card" style="width: 18rem;" >
                     <figure class="cardsBusqueda" id="deportivo">
                         <img src="/assets-2/img-9-deportivo.jpg" class="card-img-top" alt="Imagen 9" id="deportivo3">
                         <div class="card-body text-center">
                             <h5 class="card-title">Adidas Adizero Boston</h5>
-                            <p class="card-text"> 81.000$</p>
-                            <boton onclick="agregarAlCarrito('deportivo3')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                            <p class="card-text"> 81000$</p>
+                            <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
                     </figure>
                 </div>
             </div>

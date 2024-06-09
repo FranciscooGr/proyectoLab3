@@ -820,11 +820,19 @@ align-items: center;
     margin-bottom: -20%;
   }
 
-  .bin-button{
-    height: 15%;
-    width: 10%;
-    margin-bottom: -11%;
-    margin-left: -10%;
+  .button-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .button-group .buttonCantidad,
+  .button-group .bin-button {
+    margin: 0 5px;
+  }
+
+  .bin-button {
+    height: 25px; /* Ajusta la altura según tu diseño */
+    width: 25px; /* Ajusta el ancho según tu diseño */
   }
 }
 

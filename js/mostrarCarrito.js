@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function loadHtml() {
     //muestra el carrito
     carritoContainer.innerHTML = ""; // Limpia el contenido actual
-    let totalPrecio = 0; // Variable para almacenar el total de precios
+    let totalPrecio = 5000; // Variable para almacenar el total de precios
     let cuantasZapatillas = 0; 
     buyThings.forEach((productCard) => {
         const { id, title, price, image, amount } = productCard;
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         carritoContainer.appendChild(productoDiv);
 
         // Agrega el precio de la zapatilla al totalPrecio
-        totalPrecio += parseFloat(price) * amount + 5000;
+        totalPrecio += parseFloat(price);
         
 
         // Agrega el evento de clic al botón de eliminación
@@ -49,12 +49,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         botonAgregar.addEventListener("click", () => {
             agregarZapatilla(title);
-            
+            totalPrecio += parseFloat(price);
+            amount = amount + 1; 
+            console.log("valor parse "+amount);
             actualizarTotal(); // Actualizar el total después de agregar una zapatilla
         });
         botonRestar.addEventListener("click", () => {
             restarZapatilla(title, -1);
-            
+            totalPrecio -= parseFloat(price);
+            amount = amount - 1; 
             actualizarTotal(); // Actualizar el total después de restar una zapatilla
         });
        // cuantasZapatillas += parseInt(amount);
@@ -62,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Función para actualizar el contenido del elemento Total con el totalPrecio
     function actualizarTotal() {
-     
+      
         const totalElement = document.getElementById("total");
         //const totalZapatillas = document.getElementById("totalZapatillas");
         totalElement.textContent = "$" + totalPrecio.toFixed(2); // Mostrar el total con dos decimales

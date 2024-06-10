@@ -18,6 +18,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="/js/agregarAlCarrito.js"></script>
+        <script src="/barraBusqueda.js"></script>
+        <script src="/filtro.js"></script>
 </head>
 
 <body>
@@ -74,151 +77,150 @@
     <main class="main">
 
         <div class="row">
-            <!-- Columnas de cartas -->
+            <!-- Primera columna -->
             <div class="col-md-4">
-                <!-- Primera columna -->
+                <!-- Primera carta -->
                 <div class="card" style="width: 18rem;" id="ofertas1">
                     <img src="/assets_ofertas/zapatila-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">Air Jordan 1 Mid SE Craft</h5>
-                        <p class="card-text">
-                            <s>$259.999</s> $194.999
-                        </p>
+                        <p class="card-text">65999$</p>
                         <p class="discount">25% de descuento</p>
-                        <a href="/descripcion.html" onclick="guardarImagen('/assets_ofertas/zapatila-1.jpg', 'ofertas1')" class="btn btn-primary">Ver mas</a>
+                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
                     </div>
                 </div>
-                <!-- Fin de la primera columna -->
+                <!-- Fin de la primera carta -->
             </div>
-
+            <!-- Fin de la primera columna -->
+        
+            <!-- Segunda columna -->
             <div class="col-md-4">
-                <!-- Segunda columna -->
+                <!-- Segunda carta -->
                 <div class="card" style="width: 18rem;" id="ofertas2">
                     <img src="/assets_ofertas/zapatila-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">Air Jordan 1 Mid SE Deluxe</h5>
-                        <p class="card-text">
-                            <s>$259.999</s> $194.999
-                        </p>
+                        <p class="card-text">130000$</p>
                         <p class="discount">25% de descuento</p>
-                        <a href="/descripcion.html" onclick="guardarImagen('/assets_ofertas/zapatila-2.jpg', 'ofertas2')" class="btn btn-primary">Ver mas</a>
+                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
                     </div>
                 </div>
-                <!-- Fin de la segunda columna -->
+                <!-- Fin de la segunda carta -->
             </div>
-
+            <!-- Fin de la segunda columna -->
+        
+            <!-- Tercera columna -->
             <div class="col-md-4">
-                <!-- Tercera columna -->
+                <!-- Tercera carta -->
                 <div class="card" style="width: 18rem;" id="ofertas3">
                     <img src="/assets_ofertas/zapatila-3.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">Air Jordan 3 High SE Raft</h5>
-                        <p class="card-text">
-                            <s>$189.999</s> $151.999
-                        </p>
+                        <p class="card-text">110000$</p>
                         <p class="discount">20% de descuento</p>
-                        <a href="/descripcion.html" onclick="guardarImagen('/assets_ofertas/zapatila-3.jpg', 'ofertas3')" class="btn btn-primary">Ver mas</a>
+                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
                     </div>
                 </div>
-                <!-- Fin de la tercera columna -->
+                <!-- Fin de la tercera carta -->
             </div>
-
+            <!-- Fin de la tercera columna -->
+        </div>
+        
+        <div class="row">
+            <!-- Cuarta columna -->
             <div class="col-md-4">
-                <!-- cuarta columna -->
+                <!-- Cuarta carta -->
                 <div class="card" style="width: 18rem;" id="ofertas4">
                     <img src="/assets_ofertas/zapatila-4.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title"> Jordan Nu Retro 1 Low t</h5>
-                        <p class="card-text">
-                            <s>$259.999</s> $194.999
-                        </p>
+                        <h5 class="card-title">Jordan Nu Retro 1 Low t</h5>
+                        <p class="card-text">70000$</p>
                         <p class="discount">25% de descuento</p>
-                        <a href="/descripcion.html" onclick="guardarImagen('/assets_ofertas/zapatila-4.jpg', 'ofertas4')" class="btn btn-primary">Ver mas</a>
+                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
                     </div>
                 </div>
-                <!-- Fin de la cuarta columna -->
+                <!-- Fin de la cuarta carta -->
             </div>
-
+            <!-- Fin de la cuarta columna -->
+        
+            <!-- Quinta columna -->
             <div class="col-md-4">
-                <!-- quinta columna -->
+                <!-- Quinta carta -->
                 <div class="card" style="width: 18rem;" id="ofertas5">
                     <img src="/assets_ofertas/zapatilla-5.jpeg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title"> Air Jordan 1 High OG Mauve </h5>
-                        <p class="card-text">
-                            <s>$259.999</s> $194.999
-                        </p>
+                        <h5 class="card-title">Air Jordan 1 High OG Mauve</h5>
+                        <p class="card-text">80000$</p>
                         <p class="discount">25% de descuento</p>
-                        <a href="/descripcion.html" onclick="guardarImagen('/assets_ofertas/zapatilla-5.jpeg', 'ofertas5')" class="btn btn-primary">Ver mas</a>
+                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
                     </div>
                 </div>
-                <!-- Fin de la quinta columna -->
+                <!-- Fin de la quinta carta -->
             </div>
-
+            <!-- Fin de la quinta columna -->
+        
+            <!-- Sexta columna -->
             <div class="col-md-4">
-                <!-- sexta columna -->
+                <!-- Sexta carta -->
                 <div class="card" style="width: 18rem;" id="ofertas6">
                     <img src="/assets_ofertas/zapatilla-6.jpeg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title"> Adidas Daily 3.0 </h5>
-                        <p class="card-text">
-                            <s>$85.999</s> $68.799
-                        </p>
-                        <p class="discount">20% de descuento</p>
-                        <a href="/descripcion.html" onclick="guardarImagen('/assets_ofertas/zapatilla-6.jpeg', 'ofertas6')" class="btn btn-primary">Ver mas</a>
+                        <h5 class="card-title">Adidas Daily 3.0</h5>
+                        <p class="card-text">145999$</p>
+                        <p class="discount">25% de descuento</p>
+                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
                     </div>
                 </div>
-                <!-- Fin de la sexta columna -->
+                <!-- Fin de la sexta carta -->
             </div>
-
+            <!-- Fin de la sexta columna -->
+        </div>
+        
+        <div class="row">
+            <!-- Séptima columna -->
             <div class="col-md-4">
-                <!-- septima columna -->
+                <!-- Séptima carta -->
                 <div class="card" style="width: 18rem;" id="ofertas7">
                     <img src="/assets_ofertas/zapatilla-7.jpg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title"> apatillas Rivalry Low </h5>
-                        <p class="card-text">
-                            <s>$130.000</s> $104.000
-                        </p>
+                        <h5 class="card-title">Zapatillas Rivalry Low</h5>
+                        <p class="card-text">120000$</p>
                         <p class="discount">20% de descuento</p>
-                        <a href="/descripcion.html" onclick="guardarImagen('/assets_ofertas/zapatilla-7.jpg', 'ofertas7')" class="btn btn-primary">Ver mas</a>                    </div>
+                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
+                    </div>
                 </div>
-                <!-- Fin de la septima columna -->
+                <!-- Fin de la séptima carta -->
             </div>
-
+            <!-- Fin de la séptima columna -->
+        
+            <!-- Octava columna -->
             <div class="col-md-4">
-                <!-- octava columna -->
+                <!-- Octava carta -->
                 <div class="card" style="width: 18rem;" id="ofertas8">
                     <img src="/assets_ofertas/zapatilla-8.jpeg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title"> Zapatillas Ultraboost 1.0 </h5>
-                        <p class="card-text">
-                            <s>$195.000</s> 136.500
-                        </p>
-                        <p class="discount">20% de descuento</p>
-                        <a href="/descripcion.html" onclick="guardarImagen('/assets_ofertas/zapatilla-8.jpeg', 'ofertas8')" class="btn btn-primary">Ver mas</a>                    </div>
+                        <h5 class="card-title">Zapatillas Ultraboost 1.0</h5>
+                        <p class="card-text">90000$</p>
+                        <p class="discount">10% de descuento</p>
+                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
+                    </div>
                 </div>
-                <!-- Fin de la octava columna -->
+                <!-- Fin de la octava carta -->
             </div>
-
             <div class="col-md-4">
-                <!-- novena columna -->
-                <div class="card" style="width: 18rem;" id="ofertas1">
+                <!-- Octava carta -->
+                <div class="card" style="width: 18rem;" id="ofertas8">
                     <img src="/assets_ofertas/zapatilla-9.jpeg" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                        <h5 class="card-title"> Adidas Daily 3.0 </h5>
-                        <p class="card-text">
-                            <s>$120.000</s> $96.000
-                        </p>
+                        <h5 class="card-title">Zapatillas Ultraboost 1.0</h5>
+                        <p class="card-text">100000$</p>
                         <p class="discount">20% de descuento</p>
-                        <a href="/descripcion.html" onclick="guardarImagen('/assets_ofertas/zapatilla-9.jpeg', 'ofertas9')" class="btn btn-primary">Ver mas</a>                    </div>
+                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
+                    </div>
                 </div>
-                <!-- Fin de la novena columna -->
+                <!-- Fin de la octava carta -->
             </div>
-
-            <!-- Fin de las columnas de cartas -->
-        </div>
-
+            </div>
         <!-- Contenedor de métodos -->
 
 
@@ -296,8 +298,5 @@
     </footer>
 
 </body>
-<script src="/filtro.js"></script>
-<script src="/imgSeleccionada.js"> </script>
-<script src="/barraBusqueda.js"></script>
-<script src="/mostrarCarrito.js"></script>
+
 </html>

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SneakyWalks</title>
     <link rel="stylesheet" href="styleZapatillas.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SneakyWalks</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
@@ -20,6 +22,17 @@
     ></script>
     <script
       src="https://kit.fontawesome.com/738b60d149.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -64,7 +77,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="#"
+                  href="/coleccion/coleccion.html"
                   style="font-family: 'Bebas Neue'; font-size: 20px"
                   >Colección</a
                 >
@@ -72,7 +85,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="#"
+                  href="/ofertas.html"
                   style="font-family: 'Bebas Neue'; font-size: 20px"
                   >Ofertas</a
                 >
@@ -110,21 +123,30 @@
         </div>
       </nav>
     </header>
+
     <main class="main">
       <div class="contenedor-producto">
         <div class="contenedor-imagen-titulo">
-          <img src="" class="mainImg" id="urbano" alt="Zapatilla" />
+          <img src="" class="mainImg" id="mainImg" alt="Zapatilla" />
         </div>
-        <div class="contenedor-informacion">
-          <div class="contenedor-precio">
-            <h3 id="tituloProducto">Título del Producto</h3>
-            <h2 id="precio"></h2>
+        <div class="resumenCompra">
+          <header>
+            <h3 id="tituloProducto"></h3>
+          </header>
+          <div class="resumen-body">
+            <h4 id="precioSigno">$</h4><h4 id="precio"></h4>
+            <hr>
+            <p id="descripcion"></p>
           </div>
-          <button class="agregarCarrito">Agregar al carrito</button>
+          <footer>
+            <button class="agregarCarrito" onclick="agregarAlCarrito()">Agregar al carrito</button>
+            <a href="/index.html"><button class="volverMenu">Volver al menu</button></a>
+          </footer>
         </div>
       </div>
     </main>
-    <script src="/imgRecibida.js"></script>
+
+    <script src="/descripcionYcarrito.js"></script>
     <footer class="footer">
       <div class="grupo-1">
         <div class="box">

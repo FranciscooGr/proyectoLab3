@@ -1,91 +1,193 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Establece una altura mínima del viewport */
 html, body {
-    height: 100%;
+  height: 100%;
 }
 
 /* Establece el color de fondo general */
 body {
-    background-color: #8f8e90;
-    font-family: Bebas Neue; /* Cambiado a una fuente más común */
+  background-color: #8f8e90;
+  font-family: Bebas Neue; /* Cambiado a una fuente más común */
 }
 
 /* Establece el color del texto para todos los elementos */
 
 .bg-custom {
-    background-color: #454446; /* Establece el color de fondo personalizado */
+  background-color: #454446; /* Establece el color de fondo personalizado */
 }
 /* Estilos para la barra de navegación */
 .navbar-brand {
-    color: white; /* Cambiado a blanco para mayor contraste */
+  color: white; /* Cambiado a blanco para mayor contraste */
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: white; /* Establece el color del texto de los enlaces de navegación en blanco */
+  color: white; /* Establece el color del texto de los enlaces de navegación en blanco */
 }
 
 .custom-padding {
-    margin: 1% 1% 0; /* Ajusta los márgenes superior, derecho e izquierdo */
-    border-radius: 20px;
+margin: 1% 1% 1% 1%; /* Ajusta los márgenes superior, derecho e izquierdo */
+border-radius: 20px;
 }
 
 /* Estilos para el contenido principal */
 .main {
-  font-family:Bebas Neue;
-    position: relative;
-    flex-wrap: wrap;
-    margin-top: 10%; /* Ajustado para adaptarse al nuevo margen superior */
-    margin-right: 0%;
-    margin-bottom: 0%;
-    
-    height: 100%;
-    width: auto;
-    padding: 4% 0% 10% 10%; /* Ajustado para adaptarse al nuevo margen superior */
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    background-color: #8f8e90;
+font-family: Bebas Neue;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin-top: 10%; /* Ajustado para adaptarse al nuevo margen superior */
+width: 100%;
+padding: 4% 10%; /* Ajustado para adaptarse al nuevo margen superior */
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+background-color: #8f8e90;
 }
-/* Estilos para el contenedor de imágenes */
+
+.container {
+max-width: 1100px;
+margin: auto;
+overflow: hidden;
+}
+
+
+/* Estilos específicos */
+.custom-padding {
+padding: 20px ;
+}
+
+.navbar-brand img {
+margin-left: 10px;
+}
+.resumenCompra header, .resumenCompra footer, .resumenCompra .resumen-body {
+  padding: 10px;
+}
+.nav-link {
+color: white !important;
+margin-left: 20px !important;
+}
+
 .contenedor-producto {
-    display: flex;
-    align-items: flex-start; /* Alinea los elementos al inicio */
+  display: flex;
+  justify-content: space-between; /* Espacia los elementos */
+  align-items: stretch; /* Alinea los elementos en toda la altura */
+  margin-top: 50px;
+  width: 100%;
 }
 
 .contenedor-imagen-titulo {
-    flex: 1;
-}
-
-.contenedor-informacion {
-    flex: 1;
-    padding-left: 20px; /* Espacio entre la imagen y los detalles */
+flex: 1;
+text-align: center;
+margin-right: 60px; /* Agrega espacio a la derecha de la imagen */
 }
 
 .mainImg {
-    width: 500px; /* Ancho de la imagen */
-    max-width: 500px;
-    height: auto; /* Altura ajustada automáticamente */
-    border-radius: 20px;
+  width: 500px;
+  height: 270px;
+  left: 0;
+   /* Ajusta la imagen para cubrir el contenedor */
+  border-radius: 15px;
+}
+.resumenCompra {
+background-color: #e9e7eb;
+border: 1px solid #454446;
+padding: 6px 0 0 0;
+border-radius: 1rem;
+height: auto;
+width: 100%;
+max-width: 400px;
 }
 
-.precio-container {
-    margin-bottom: 10px; /* Espacio entre el precio y la descripción */
+.resumenCompra header, .resumenCompra footer, .resumenCompra .resumen-body {
+padding: 10px;
 }
-
-
-.precio { /* Ancho del campo de precio */
-    font-size: 90px; /* Tamaño del texto del precio */
-    color: black;
-}
-
 
 .agregarCarrito {
-    align-self: flex-start; /* Alinear el botón al inicio */
-    border-radius: 20px;
-    margin-top: 16%;
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-top: 20px;
+cursor: pointer;
+border-radius: 15px;
+}
+#descripcion {
+  margin: 0 auto 20px; /* Margen inferior para separar del botón */
+  word-wrap: break-word; /* Rompe las palabras largas */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  text-align: center;
+  display: block; /* Asegura que el texto ocupe todo el ancho del contenedor */
+  font-size: 20px;
+}
+
+.agregarCarrito:hover {
+background-color: #45a049;
+}
+
+.volverMenu {
+background-color: #454446;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-top: 20px;
+cursor: pointer;
+border-radius: 15px;
+}
+#precioSigno {
+  display: inline-block; /* Hace que el elemento se muestre en línea con su contenido */
+}
+#precio {
+  display: inline-block; /* Hace que el elemento se muestre en línea con su contenido */
+}
+@media only screen and (max-width: 768px) {
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-left: 0px;
+}
+
+.navbar-toggler {
+    order: 1;
+}
+
+.collapse {
+    order: 2;
+}
+
+.navbar-collapse {
+    margin-top: 10px;
+}
+
+.nav-link {
+    margin: 10px 0;
+}
+.mainImg {
+  max-width: 310px;
+  height: 150px;
+  border-radius: 15px;
+  margin-bottom: 3%;
+}
+.contenedor-producto {
+    flex-direction: column;
+}
+
+.contenedor-precio {
+    margin-top: 20px;
+}
 }
 /*footer estilo */
 .footer {
@@ -94,7 +196,8 @@ body {
   width: 100%;
   max-width: 100%; /* Ancho máximo para el footer */
   margin: auto; /* Centra el footer en la página */
-  padding: 20px; /* Ajusta el espacio interno del footer */
+  padding: 19px; /* Ajusta el espacio interno del footer */
+  height: 100%;
 }
 .footer .grupo-1{
   width: 100%;
@@ -104,8 +207,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   padding: 45px;
-  max-height: 100%;
-  height: auto;
 }
 .grupo-1 .box figure{
   width: 100%;
@@ -130,6 +231,9 @@ body {
     grid-gap: 30px;
     padding: 35px 0px;
   }
+  .footer{
+    max-width: 100%;
+  }
 }
 .carts {
   width: fit-content;
@@ -138,9 +242,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 25px;
+ padding: 1% 0 1% 0;
   gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 .linkPaginas{
   text-decoration: none;

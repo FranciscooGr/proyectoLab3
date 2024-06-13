@@ -67,16 +67,12 @@
         </h1>    
         <form method="post" action="update_account.php" enctype="multipart/form-data">
             <div class="mb-3">
-                <label for="profilePicture" class="form-label">Foto de Perfil</label>
-                <input class="form-control" type="file" id="profilePicture" name="profilePicture">
-            </div>
-            <div class="mb-3">
                 <label for="username" class="form-label">Nombre de Usuario</label>
                 <input type="text" class="form-control" id="username" name="username" placeholder="Nombre de usuario" required>
             </div>
             <div class="mb-3">
-                <label for="address" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="address" name="address" placeholder="Dirección" required>
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electrónico" required>
             </div>
             <button type="submit" class="btn btn-primary">Actualizar Cuenta</button>
         </form>

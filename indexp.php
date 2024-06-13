@@ -1,15 +1,24 @@
-<?php session_start(); ?>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>Página Principal</title>
-        <title>SneakyWalks</title>
-        <link rel="stylesheet" href="/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/738b60d149.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakyWalks</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/738b60d149.js" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<script src="/js/agregarCarrito.js"></script>
+<script src="/filtro.js"></script>
+<script src="/barraBusqueda.js"></script>
+
 </head>
 <body>
   <header class="header">
@@ -34,10 +43,12 @@
                         <a class="nav-link" href="/ofertas.html" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cuenta.html" style="font-family:'Bebas Neue'; font-size: 20px">Cuenta</a>
+                        <a class="nav-link" href="/actualizarinfo.html">
+                            <img src="/assets-2/cuent.png" height="30.52" alt="cuentiniciada">
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/carrito.html">
+                        <a href="carrito.html">
                             <button data-quantity="0" class="btn-cart">
                                 <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
                                     <title>icon-cart </title>
@@ -48,49 +59,45 @@
                         </a>
                     </li>      
                 </ul>
-            </div>           
+            </div>
+                  
         </div>
-    </nav>
-</header>
-<?php if(isset($_SESSION['usuario'])): ?>
-        <p style="font-family: 'Bebas Neue'; font-size: 20px;">Bienvenido, <?php echo $_SESSION["usuario"]; ?>!</p>
-    <?php endif; ?>
-<div id="carouselExampleIndicators" class="carousel slide custom-carousel-container">
-    <!--<div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>!-->
-      <div class="carousel-inner">
-          <div class="carousel-item active custom-item-bg">
-              <img src="/assets-2/carrousel-1-p.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
-          </div>
-          <div class="carousel-item custom-item-bg">
-              <img src="/assets-2/carrousel-2.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
-          </div>
-          <div class="carousel-item custom-item-bg">
-              <img src="/assets-2/carrousel-3-p.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
-          </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-      </button>
-  </div>
+    </nav>
+  </header>
+  <div id="carouselExampleIndicators" class="carousel slide custom-carousel-container" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+        <div class="carousel-item active custom-item-bg">
+            <img src="/assets-2/carrousel-1-p.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
+        </div>
+        <div class="carousel-item custom-item-bg">
+            <img src="/assets-2/carrousel-2.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
+        </div>
+        <div class="carousel-item custom-item-bg">
+            <img src="/assets-2/carrousel-3-p.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+  
   
   <main class="main">
     <!-- Barra busqueda -->
-    <script src="/barraBusqueda.js"></script>
-    <section id="section1" class="section">
-        <div class="buscador"> 
-            <input type="search" id="busqueda" placeholder="buscar" class="card-filter">
-            <button class="btn-buscar" onclick="searchFilters('.busqueda', '.figura')">Buscar</button>
-        </div>
-    </section>
+    <div class="container">
+        <section id="section1" class="section">
+            <div class="buscador"> 
+                <input type="search" id="busqueda" placeholder="Buscar" class="card-filter">
+                <button class="btn-buscar" onclick="searchFilters('.card-filter', '.cardsBusqueda')">Buscar</button>
+            </div>
+        </section>
 
     <!-- filtro -->
     <div class="custom-select">
@@ -98,112 +105,125 @@
           <option value="filtro" selected>Filtro</option>
           <option value="urbano">Urbano</option>
           <option value="deportivo">Deportivo</option>
-          <option value="elegante">Elegante</option>
+          <option value="formal">Formal</option>
           <option value= "restaurar">Restaurar</option>
       </select>
   </div>
-  
- <article class="cards">
-  <div id="catalogo" class="container-img">
-    <div class="grid-container">
-        <div class="grid-column">
-            <div class="figura">
-                <figure class="card">
-                    <a href="/descripcion.html">
-                        <img src="/assets-2/img-1-urbana.jpg" onclick="guardarImagen('/assets-2/img-2-urbana.jpg', 'urbano1')"  class="cardUrbano" id="urbano1">
-                        <figcaption id="figcaption">Nike Court Legion </figcaption>
-                    </a>
-                </figure>
+  <article class="cards">
+    <div class="container-cards">
+        <div class="row" style="max-height: 40%; justify-content: flex-start;">
+            <div class="col">
+                <div class="card" style="width: 18rem;" id="urbano">
+                    <figure class="cardsBusqueda">
+                        <img src="/assets-2/img-1-urbana.jpg" class="card-img-top" alt="Imagen 1" id="urbano1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nike Court Legion</h5>
+                            <p class="card-text">129.999$</p>
+                            <boton onclick="agregarAlCarrito('urbano1')" id="agregarCarrito" class="btn btn-primary" > <span>agregar al carrito</span>
+                            </boton>
+                            
+                        </div>
+                    </figure>
+                </div>
+                <div class="card" style="width: 18rem;" id="urbano">
+                    <figure class="cardsBusqueda">
+                        <img src="/assets-2/img-2-urbana.jpg" class="card-img-top" alt="Imagen 2" id="urbano2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nike Court Vision</h5>
+                            <p class="card-text">70.000$</p>
+                            <boton onclick="agregarAlCarrito('urbano2')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                        </div>
+                    </figure>
+                </div>
+                <div class="card" style="width: 18rem;" id="urbano">
+                    <figure class="cardsBusqueda">
+                        <img src="/assets-2/img-3-urbana.jpg" class="card-img-top" alt="Imagen 3" id="urbano3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nike Court Vision Mid</h5>
+                            <p class="card-text">200.000$</p>
+                            <boton onclick="agregarAlCarrito('urbano3')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                        </div>
+                    </figure>
+                </div>
             </div>
-        </div>
-        <div class="grid-column">
-            <div class="figura">
-                <figure class="card">
-                    <a href="/descripcion.html">
-                        <img src="/assets-2/img-2-urbana.jpg" onclick="guardarImagen('/assets-2/img-2-urbana.jpg', 'urbano2')"  class="cardUrbano" id="urbano2">
-                        <figcaption id="figcaption">Nike Court Vision </figcaption>
-                    </a>
-                </figure>
+            <!-- Aquí empieza la segunda columna -->
+            <div class="col">
+                <div class="card" style="width: 18rem;" id="urbano">
+                    <figure class="cardsBusqueda">
+                        <img src="/assets-2/img-4-urbana.jpg" class="card-img-top" alt="Imagen 4" id="urbano4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nike Air Force 1</h5>
+                            <p class="card-text">97.999$</p>
+                            <boton onclick="agregarAlCarrito('urbano4')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                        </div>
+                    </figure>
+                </div>
+                <div class="card" style="width: 18rem;" id="urbano">
+                    <figure class="cardsBusqueda">
+                        <img src="/assets-2/img-5-urbana.jpg" class="card-img-top" alt="Imagen 5" id="urbano5">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nike Air Force 1 07 SE Mujer</h5>
+                            <p class="card-text">82.000$</p>
+                            <boton onclick="agregarAlCarrito('urbano5')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                        </div>
+                    </figure>
+                </div>
+                <div class="card" style="width: 18rem;" id="urbano">
+                    <figure class="cardsBusqueda">
+                        <img src="/assets-2/img-6-urbana.jpg" class="card-img-top" alt="Imagen 6" id="urbano6">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nike Air Max 97 Se Ncps Mujer</h5>
+                            <p class="card-text">68.999$</p>
+                            <boton onclick="agregarAlCarrito('urbano6')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                        </div>
+                    </figure>
+                </div>
             </div>
-        </div>
-        <div class="grid-column">
-            <div class="figura">
-                <figure class="card">
-                    <a href="/descripcion.html">
-                        <img src="/assets-2/img-3-urbana.jpg" onclick="guardarImagen('/assets-2/img-3-urbana.jpg', 'urbano3')" class="cardUrbano" id="urbano3">
-                    <figcaption id="figcaption">Nike Court Vision Mid</figcaption>
-                    </a>
-                </figure>
-            </div>
-        </div>
-    </div>
-    <div class="grid-container">
-        <div class="grid-column">
-            <div class="figura">
-                <figure class="card">
-                    <a href="/descripcion.html">
-                        <img src="/assets-2/img-4-urbana.jpg" onclick="guardarImagen('/assets-2/img-4-urbana.jpg', 'urbano4')" class="cardUrbano" id="urbano4">
-                        <figcaption id="figcaption">Nike Air Force 1</figcaption>
-                    </a>
-                </figure>
-            </div>
-        </div>
-        <div class="grid-column">
-            <div class="figura">
-                <figure class="card">
-                    <a href="/descripcion.html">
-                        <img src="/assets-2/img-5-urbana.jpg" onclick="guardarImagen('/assets-2/img-5-urbana.jpg', 'urbano5')" class="cardUrbano" id="urbano5">
-                    <figcaption id="figcaption">Nike Air Force 1 07 SE Mujer</figcaption>
-                    </a>
-                </figure>
-            </div>
-        </div>
-        <div class="grid-column">
-            <div class="figura">
-                <figure class="card">
-                    <a href="/descripcion.html">
-                        <img src="/assets-2/img-6-urbana.jpg" onclick="guardarImagen('/assets-2/img-6-urbana.jpg', 'urbano6')" class="cardUrbano" id="urbano6">
-                    <figcaption id="figcaption">Nike Air Max 97 Se Ncps Mujer</figcaption>
-                    </a>
-                </figure>
-            </div>
-        </div>
-    </div>
-    
-    <div class="grid-container">
-        <div class="grid-column">
-            <div class="figura">
-                <figure class="card">
-                    <a href="/descripcion.html">
-                        <img src="/assets-2/img-7-deportivo.jpg" onclick="guardarImagen('/assets-2/img-7-deportivo.jpg', 'deportivo1')" class="cardDeportivo" id="deportivo1">
-                    <figcaption id="figcaption">Adidas Duramo One</figcaption>
-                    </a>
-                </figure>
-            </div>
-        </div>
-        <div class="grid-column">
-            <div class="figura">
-                <figure class="card">
-                    <a href="/descripcion.html">
-                        <img src="/assets-2/img-8-deportivo.jpg" onclick="guardarImagen('/assets-2/img-8-deportivo.jpg', 'deportivo2')" class="cardDeportivo" id="deportivo2">
-                    <figcaption id="figcaption">Adidas Zero</figcaption>
-                    </a>
-                </figure>
-            </div>
-        </div>
-        <div class="grid-column">
-            <div class="figura">
-                <figure class="card">
-                    <a href="/descripcion.html">
-                        <img src="/assets-2/img-9-deportivo.jpg" onclick="guardarImagen('/assets-2/img-9-deportivo.jpg', 'deportivo3')" class="cardDeportivo" id="deportivo3">
-                        <figcaption id="figcaption">Adidas Adizero Boston</figcaption>
-                    </a>
-                </figure>
+            <!-- Aquí empieza la tercera columna -->
+            <div class="col">
+                <div class="card" style="width: 18rem;" id="deportivo">
+                    <figure class="cardsBusqueda">
+                        <img src="/assets-2/img-7-deportivo.jpg" class="card-img-top" alt="Imagen 7" id="deportivo1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Adidas Duramo One</h5>
+                            <p class="card-text">74.000$</p>
+                            <boton onclick="agregarAlCarrito('deportivo1')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                        </div>
+                    </figure>
+                </div>
+                <div class="card" style="width: 18rem;" id="deportivo">
+                    <figure class="cardsBusqueda">
+                        <img src="/assets-2/img-8-deportivo.jpg" class="card-img-top" alt="Imagen 8" id="deportivo2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Adidas Zero</h5>
+                            <p class="card-text">140.000$</p>
+                            <boton onclick="agregarAlCarrito('deportivo2')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                        </div>
+                    </figure>
+                </div>
+                <div class="card" style="width: 18rem;" id="deportivo">
+                    <figure class="cardsBusqueda" id="deportivo">
+                        <img src="/assets-2/img-9-deportivo.jpg" class="card-img-top" alt="Imagen 9" id="deportivo3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Adidas Adizero Boston</h5>
+                            <p class="card-text"> 81.000$</p>
+                            <boton onclick="agregarAlCarrito('deportivo3')" id="agregarCarrito" class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
 </article>
+<div class="paginas">
+  <div class="btn-group me-2" role="group" aria-label="First group" style="display: flex; justify-content: center;">
+      <a href="index.html" class="btn btn-custom" style="color: white;">1</a>
+      <a href="index2.html" class="btn btn-custom"  style="color: white;">2</a>
+      <a href="index3.html" class="btn btn-custom"  style="color: white;">3</a>
+  </div>
+</div>
 </main>
+<!-- En el cuerpo del documento -->
+
 
 <footer class="footer">
     <div class="grupo-1">
@@ -248,7 +268,5 @@
         <small>&copy;2024 <b>Slee down</b> -Todos Los Derechos Reservados.</small>
     </div>
 </footer>
-<script src="/filtro.js"></script>
-<script src="/imgSeleccionada.js"> </script>
 </body>
 </html>

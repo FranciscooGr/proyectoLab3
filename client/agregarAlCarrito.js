@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Producto:", card);
       }
     function readTheContent(productCard) {
-        const productInfo = {
+        const productInfo = { 
           id: productCard.id,
           title: productCard.querySelector(".card-title").textContent,
           price: productCard.querySelector(".card-text").textContent,

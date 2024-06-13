@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //muestra el carrito
     carritoContainer.innerHTML = ""; // Limpia el contenido actual
     let totalPrecio = 5000; // Variable para almacenar el total de precios
-    let cuantasZapatillas = 0; 
+   
     buyThings.forEach((productCard) => {
         const { id, title, price, image, amount } = productCard;
         const productoDiv = document.createElement("div");
@@ -119,3 +119,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadHtml();
 });
+

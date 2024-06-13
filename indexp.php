@@ -43,7 +43,7 @@
                         <a class="nav-link" href="/ofertas.html" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cuenta.html">
+                        <a class="nav-link" href="/actualizarinfo.html">
                             <img src="/assets-2/cuent.png" height="30.52" alt="cuentiniciada">
                         </a>
                     </li>

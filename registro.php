@@ -89,7 +89,7 @@
                             <a class="nav-link" href="/ofertas.html" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/login.php" style="font-family:'Bebas Neue'; font-size: 20px">Cuenta</a>
+                            <a class="nav-link" href="/cuenta.html" style="font-family:'Bebas Neue'; font-size: 20px">Cuenta</a>
                         </li>
                         <li class="nav-item">
                         <a href="/carrito.html">

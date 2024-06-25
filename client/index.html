@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/paginaWeb/client/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SneakyWalks</title>
@@ -14,10 +14,9 @@
     <script src="https://kit.fontawesome.com/738b60d149.js" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-<script src="/client/mercadoPago.js"></script>
-<script src="/client/agregarAlCarrito.js"></script>
-<script src="/filtro.js"></script>
-<script src="/barraBusqueda.js"></script>
+<script src="/paginaWeb/client/agregarAlCarrito.js"></script>
+<script src="/paginaWeb/filtro.js"></script>
+<script src="/paginaWeb/barraBusqueda.js"></script>
 
 
 </head>
@@ -27,7 +26,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <span style="color: white; font-family: 'Bebas Neue'; font-size: 30px;">SneakyWalks</span>
-                <img src="/assets-2/imgLogo.png" style="width: 50px; height: 50px; color: white;">
+                <img src="/paginaWeb/client/imgLogo.png" style="width: 50px; height: 50px; color: white;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,28 +34,31 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="/paginaWeb/client/index.html" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
+                        
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/coleccion/coleccion.html" style="font-family:'Bebas Neue'; font-size: 20px">Colección</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/client/ofertas.html" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
+                        <a class="nav-link" href="/paginaWeb//client/ofertas.html" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/cuenta.html" style="font-family:'Bebas Neue'; font-size: 20px">Cuenta</a>
+                        <a class="nav-link" href="/paginaWeb/cuenta.html" style="font-family:'Bebas Neue'; font-size: 20px">Cuenta</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/client/carrito.html">
+                        <a href="/paginaWeb/client/carrito.html">
                             <button  class="btn-cart" id="cantidadDeZapatillas">
+                                
                                 <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
                                     <title>icon-cart </title>
                                     <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+                                    <span id="quantity"></span>
                                 </svg>
-                                <span class="quantity"></span>
                             </button>
                         </a>
                     </li>      
+                    
                 </ul>
             </div>
                   
@@ -67,13 +69,13 @@
   <div id="carouselExampleIndicators" class="carousel slide custom-carousel-container" data-bs-ride="carousel" data-bs-interval="4000">
     <div class="carousel-inner">
         <div class="carousel-item active custom-item-bg">
-            <img src="/assets-2/carrousel-1-p.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
+            <img src="/paginaWeb/assets-2/carrousel-1-p.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
         </div>
         <div class="carousel-item custom-item-bg">
-            <img src="/assets-2/carrousel-2.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
+            <img src="/paginaWeb/assets-2/carrousel-2.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
         </div>
         <div class="carousel-item custom-item-bg">
-            <img src="/assets-2/carrousel-3-p.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
+            <img src="/paginaWeb/assets-2/carrousel-3-p.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 100%; height: auto;" alt="...">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -112,10 +114,10 @@
     <div class="container-cards">
         <div class="row" style="max-height: 40%; justify-content: flex-start;">
             <div class="col">
-                <div class="card" style="width: 18rem;" >
+                <div class="card" style="width: 18rem;" id="urbano">
                     <figure class="cardsBusqueda">
                         
-                        <img src="/assets-2/img-1-urbana.jpg" class="card-img-top" alt="Imagen 1" >
+                        <img src="/paginaWeb/assets-2/img-1-urbana.jpg" class="card-img-top" alt="Imagen 1" >
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Court Legion</h5>
                             <p class="card-text">129999$</p>
@@ -124,9 +126,9 @@
                         
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" >
-                    <figure class="cardsBusqueda">
-                        <img src="/assets-2/img-2-urbana.jpg" class="card-img-top" alt="Imagen 2" >
+                <div class="card" style="width: 18rem;" id="urbano">
+                    <figure class="cardsBusqueda" id="urbano">
+                        <img src="/paginaWeb/assets-2/img-2-urbana.jpg" class="card-img-top" alt="Imagen 2" >
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Court Vision</h5>
                             <p class="card-text">1000$</p>
@@ -134,9 +136,9 @@
                         </div>
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" >
+                <div class="card" style="width: 18rem;" id="urbano">
                     <figure class="cardsBusqueda">
-                        <img src="/assets-2/img-3-urbana.jpg" class="card-img-top" alt="Imagen 3" >
+                        <img src="/paginaWeb/assets-2/img-3-urbana.jpg" class="card-img-top" alt="Imagen 3" >
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Court Vision Mid</h5>
                             <p class="card-text">200000$</p>
@@ -147,9 +149,9 @@
             </div>
             <!-- Aquí empieza la segunda columna -->
             <div class="col">
-                <div class="card" style="width: 18rem;" >
+                <div class="card" style="width: 18rem;" id="urbano">
                     <figure class="cardsBusqueda">
-                        <img src="/assets-2/img-4-urbana.jpg" class="card-img-top" alt="Imagen 4" id="urbano4">
+                        <img src="/paginaWeb/assets-2/img-4-urbana.jpg" class="card-img-top" alt="Imagen 4" id="urbano4">
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Air Force 1</h5>
                             <p class="card-text">97999$</p>
@@ -157,9 +159,9 @@
                         </div>
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" >
+                <div class="card" style="width: 18rem;" id="urbano">
                     <figure class="cardsBusqueda">
-                        <img src="/assets-2/img-5-urbana.jpg" class="card-img-top" alt="Imagen 5" id="urbano5">
+                        <img src="/paginaWeb/assets-2/img-5-urbana.jpg" class="card-img-top" alt="Imagen 5" id="urbano5">
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Air Force 1 07 SE Mujer</h5>
                             <p class="card-text">82000$</p>
@@ -167,9 +169,9 @@
                         </div>
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" >
+                <div class="card" style="width: 18rem;" id="urbano">
                     <figure class="cardsBusqueda">
-                        <img src="/assets-2/img-6-urbana.jpg" class="card-img-top" alt="Imagen 6" id="urbano6">
+                        <img src="/paginaWeb/assets-2/img-6-urbana.jpg" class="card-img-top" alt="Imagen 6" id="urbano6">
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Air Max 97 Se Ncps Mujer</h5>
                             <p class="card-text">68999$</p>
@@ -180,9 +182,9 @@
             </div>
             <!-- Aquí empieza la tercera columna -->
             <div class="col">
-                <div class="card" style="width: 18rem;" >
+                <div class="card" style="width: 18rem;" id="deportivo">
                     <figure class="cardsBusqueda">
-                        <img src="/assets-2/img-7-deportivo.jpg" class="card-img-top" alt="Imagen 7" id="deportivo1">
+                        <img src="/paginaWeb/assets-2/img-7-deportivo.jpg" class="card-img-top" alt="Imagen 7" id="deportivo1">
                         <div class="card-body text-center">
                             <h5 class="card-title">Adidas Duramo One</h5>
                             <p class="card-text">74000$</p>
@@ -190,9 +192,9 @@
                         </div>
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" >
+                <div class="card" style="width: 18rem;" id="deportivo">
                     <figure class="cardsBusqueda">
-                        <img src="/assets-2/img-8-deportivo.jpg" class="card-img-top" alt="Imagen 8" id="deportivo2">
+                        <img src="/paginaWeb/assets-2/img-8-deportivo.jpg" class="card-img-top" alt="Imagen 8" id="deportivo2">
                         <div class="card-body text-center">
                             <h5 class="card-title">Adidas Zero</h5>
                             <p class="card-text">140000$</p>
@@ -200,9 +202,9 @@
                         </div>
                     </figure>
                 </div>
-                <div class="card" style="width: 18rem;" >
-                    <figure class="cardsBusqueda" id="deportivo">
-                        <img src="/assets-2/img-9-deportivo.jpg" class="card-img-top" alt="Imagen 9" id="deportivo3">
+                <div class="card" style="width: 18rem;" id="deportivo">
+                    <figure class="cardsBusqueda" >
+                        <img src="/paginaWeb/assets-2/img-9-deportivo.jpg" class="card-img-top" alt="Imagen 9" id="deportivo3">
                         <div class="card-body text-center">
                             <h5 class="card-title">Adidas Adizero Boston</h5>
                             <p class="card-text"> 81000$</p>
@@ -216,9 +218,9 @@
 </article>
 <div class="paginas">
   <div class="btn-group me-2" role="group" aria-label="First group" style="display: flex; justify-content: center;">
-      <a href="index.html" class="btn btn-custom" style="color: white;">1</a>
-      <a href="index2.html" class="btn btn-custom"  style="color: white;">2</a>
-      <a href="index3.html" class="btn btn-custom"  style="color: white;">3</a>
+      <a href="/paginaWeb/client/index.html" class="btn btn-custom" style="color: white;">1</a>
+      <a href="/paginaWeb/client/index2.html" class="btn btn-custom"  style="color: white;">2</a>
+      <a href="/paginaWeb/client/index3.html" class="btn btn-custom"  style="color: white;">3</a>
   </div>
 </div>
 </main>
@@ -236,9 +238,9 @@
         </div>
         <div class="box">
             <h2>Novedades SneakyWalks</h2>
-            <a class="linkPaginas" href="/ofertas.html">Las mejores promos</a>
+            <a class="linkPaginas" href="/paginaWeb/client/ofertas.html">Las mejores promos</a>
             <a class="linkPaginas" href="/coleccion/coleccion.html">Nuestra Coleccion</a>
-            <a class="linkPaginas" href="/carrito.html">Mira tu carrito</a>
+            <a class="linkPaginas" href="/paginaWeb/client/carrito.html">Mira tu carrito</a>
 
         </div>
         <div class="box">

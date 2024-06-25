@@ -12,9 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         productoDiv.classList.add("producto");
         productoDiv.innerHTML = `
-            <img src="${image}" alt="Imagen de ${title}">
-            <p class="nombre-producto">${title}</p>
-            <button class="bin-button" id="eliminarZapatilla" data-id="${id}">
+            <div class="producto">
+    <img src="${image}" alt="Imagen de ${title}">
+    <div class="producto-info">
+        <p class="nombre-producto">${title}</p>
+        <div class="precio-container">
+            <p class="precioProducto">$${parseFloat(price)}</p>
+        </div>
+        <div class="cantidad-container">
+            <button id="eliminarZapatilla" class="bin-button" data-id="${id}">
                 <svg class="bin-top" viewBox="0 0 39 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="5" x2="39" y2="5" stroke="white" stroke-width="4"></line>
                     <line x1="12" y1="1.5" x2="26.0357" y2="1.5" stroke="white" stroke-width="3"></line>
@@ -29,9 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 </svg>
             </button>
             <button id="restarZapatilla" class="buttonCantidad">-</button>
-            <span>${amount}</span>
+            <span class="cantidad">${amount}</span>
             <button id="agregarZapatilla" class="buttonCantidad">+</button>
-            <p class="precioProducto">$${parseFloat(price)}</p>
+        </div>
+    </div>
+</div>
         `;
 
         carritoContainer.appendChild(productoDiv);

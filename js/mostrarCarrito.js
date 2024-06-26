@@ -115,30 +115,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadHtml();
 
-  const mercadopago = require('mercadopago');
 
-mercadopago.configurations.setAccessToken('TEST-1e7f350d-5b57-4152-a172-4c71c50c7c7c');
-
-  document.getElementById("checkout-button").addEventListener("click", () => {
-    fetch('/create_preference', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        items: buyThings.map(product => ({
-          title: product.title,
-          unit_price: parseFloat(product.price),
-          quantity: product.amount
-        }))
-      })
-    })
-    .then(response => response.json())
-    .then(data => {
-      window.location.href = `https://www.mercadopago.com/checkout/v1/redirect?pref_id=${data.id}`;
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-  });
 });

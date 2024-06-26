@@ -63,6 +63,38 @@ body {
   height: auto;
   overflow: hidden;
 }
+.figura-content figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  pointer-events: none; /* Evita que el nombre de la zapatilla interfiera con los enlaces */
+  z-index: 1; /* Asegura que el nombre esté encima de la imagen */
+}
+.grid-row {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos al principio de la fila */
+}
+
+/* Estilos para el contenido de la figura */
+.figura-content {
+  position: relative;
+  margin-bottom: 20px; /* Ajusta el espacio entre las filas según sea necesario */
+}
+/* Clase CSS única para asegurar que todas las imágenes tengan el mismo tamaño */
+.imagen-coleccion {
+  width: 100%; /* Ajusta el ancho según sea necesario */
+  height: auto; /* Permite que la altura se ajuste automáticamente manteniendo la proporción */
+  display: block; /* Asegura que la imagen se comporte como un bloque */
+  width: 100%; /* Ajusta el ancho de la figura al 100% */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
 
 figcaption {
   position: absolute; /* Posiciona el texto de forma absoluta dentro del contenedor */
@@ -80,6 +112,19 @@ figcaption {
   padding: 5px 10px; /* Añade espacio interno alrededor del texto */
   margin: 0; /* Elimina el margen predeterminado */
   text-align: center; /* Centra el texto */
+}
+.special-caption {
+  position: absolute; /* Posiciona el texto de forma absoluta dentro del contenedor */
+  top: 0; /* Posiciona el texto en la parte superior del contenedor */
+  left: 0; /* Posiciona el texto en la parte izquierda del contenedor */
+  width: 100%; /* Asegura que el texto ocupe todo el ancho del contenedor */
+  padding: 10px; /* Añade espacio interno alrededor del texto */
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para el texto */
+  color: white; /* Color del texto */
+  font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+  font-size: 16px; /* Cambia el tamaño del texto */
+  text-align: center; /* Centra el texto */
+  box-sizing: border-box; /* Asegura que el padding no incremente el ancho total */
 }
 
 .card {
@@ -183,18 +228,19 @@ figcaption {
 
 
 /* Estilos para la cuadrícula en dispositivos pequeños */
-@media screen and (max-width: 800px) {
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna */
-    }
+@media screen and (max-width: 1200px) {
+  .grid-container {
+      grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna */
+  }
 }
 
 /* Estilos para la cuadrícula en dispositivos muy pequeños */
-@media screen and (max-width: 500px) {
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna */
-    }
+@media screen and (max-width: 900px) {
+  .grid-container {
+      grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna */
+  }
 }
+
 
 .carts {
   width: fit-content;

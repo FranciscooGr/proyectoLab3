@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/client/style.css">
+    <link rel="stylesheet" href="/offers/styleOffers.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OFERTAS</title>
@@ -18,9 +18,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="/client/agregarAlCarrito.js"></script>
-        <script src="/barraBusqueda.js"></script>
-        <script src="/filtro.js"></script>
+        <script src="/js/agregarAlCarrito.js"></script>
+        <script src="/js/barraBusqueda.js"></script>
+        <script src="/js/filtro.js"></script>
 </head>
 
 <body>
@@ -37,19 +37,19 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/client/index.html" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="/homePage/index.html" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/coleccion/coleccion.html" style="font-family:'Bebas Neue'; font-size: 20px">Colección</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/client/ofertas.html" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
+                            <a class="nav-link" href="/offers/ofertas.html" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/cuenta.html" style="font-family:'Bebas Neue'; font-size: 20px">Cuenta</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/client/carrito.html">
+                            <a href="/cart/carrito.html">
                                 <button  class="btn-cart" id="cantidadDeZapatillas">
                                     <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
                                         <title>icon-cart </title>
@@ -75,151 +75,115 @@
 
     <main class="main">
 
-        <div class="row">
-            <!-- Primera columna -->
-            <div class="col-md-4">
-                <!-- Primera carta -->
-                <div class="card" style="width: 18rem;" id="ofertas1">
-                    <img src="/assets_ofertas/zapatila-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Air Jordan 1 Mid SE Craft</h5>
-                        <p class="card-text">65999$</p>
-                        <p class="discount">25% de descuento</p>
-                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
+        <article class="cards">
+            <div class="container-cards">
+                <div class="row" style="max-height: 40%; justify-content: flex-start;">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;" id="urbano">
+                            <figure class="cardsBusqueda">
+                                
+                                <img src="/offers/assets_ofertas/zapatilla-1.jpeg" class="card-img-top" alt="Imagen 1" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adidas Campus</h5>
+                                    <p class="card-text">130000$</p>
+                                    <p class="discount">25% de descuento</p>
+                                    <boton class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                                </div>
+                                
+                            </figure>
+                        </div>
+                        <div class="card" style="width: 18rem;" id="urbano">
+                            <figure class="cardsBusqueda" id="urbano">
+                                <img src="/offers/assets_ofertas/zapatilla-2.jpg" class="card-img-top" alt="Imagen 2" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adidas Classic Samba</h5>
+                                    <p class="card-text">1000$</p>
+                                    <boton class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="card" style="width: 18rem;" id="urbano">
+                            <figure class="cardsBusqueda">
+                                <img src="/offers/assets_ofertas/zapatilla-3.jpeg" class="card-img-top" alt="Imagen 3" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adidas Black Vision</h5>
+                                    <p class="card-text">200000$</p>
+                                    <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Aquí empieza la segunda columna -->
+                    <div class="col">
+                        <div class="card" style="width: 18rem;" id="urbano">
+                            <figure class="cardsBusqueda">
+                                <img src="/offers/assets_ofertas/zapatilla-4.jpeg" class="card-img-top" alt="Imagen 4" id="urbano4">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adidas Original Galezze</h5>
+                                    <p class="card-text">97999$</p>
+                                    <p class="discount">25% de descuento</p>
+                                    <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="card" style="width: 18rem;" id="urbano">
+                            <figure class="cardsBusqueda">
+                                <img src="/offers/assets_ofertas/zapatilla-5.jpeg" class="card-img-top" alt="Imagen 5" id="urbano5">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adidas Sport Galaxy</h5>
+                                    <p class="card-text">82000$</p>
+                                    <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="card" style="width: 18rem;" id="urbano">
+                            <figure class="cardsBusqueda">
+                                <img src="/offers/assets_ofertas/zapatilla-6.jpg" class="card-img-top" alt="Imagen 6" id="urbano6">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adidas vlCourt 3.0</h5>
+                                    <p class="card-text">68999$</p>
+                                    <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Aquí empieza la tercera columna -->
+                    <div class="col">
+                        <div class="card" style="width: 18rem;" id="deportivo">
+                            <figure class="cardsBusqueda">
+                                <img src="/offers/assets_ofertas/zapatilla-7.jpg" class="card-img-top" alt="Imagen 7" id="deportivo1">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Adidas original samba</h5>
+                                    <p class="card-text">74000$</p>
+                                    <p class="discount">25% de descuento</p>
+                                    <boton class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="card" style="width: 18rem;" id="deportivo">
+                            <figure class="cardsBusqueda">
+                                <img src="/offers/assets_ofertas/zapatilla-8.jpg" class="card-img-top" alt="Imagen 8" id="deportivo2">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Nike Air Force 09</h5>
+                                    <p class="card-text">140000$</p>
+                                    <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="card" style="width: 18rem;" id="deportivo">
+                            <figure class="cardsBusqueda" >
+                                <img src="/offers/assets_ofertas/zapatilla-9.jpg" class="card-img-top" alt="Imagen 9" id="deportivo3">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">LaCoste 003 line</h5>
+                                    <p class="card-text"> 81000$</p>
+                                    <boton  class="btn btn-primary"><span>agregar al carrito</span> </boton>
+                                    
+                            </figure>
+                        </div>
                     </div>
                 </div>
-                <!-- Fin de la primera carta -->
             </div>
-            <!-- Fin de la primera columna -->
-        
-            <!-- Segunda columna -->
-            <div class="col-md-4">
-                <!-- Segunda carta -->
-                <div class="card" style="width: 18rem;" id="ofertas2">
-                    <img src="/assets_ofertas/zapatila-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Air Jordan 1 Mid SE Deluxe</h5>
-                        <p class="card-text">130000$</p>
-                        <p class="discount">25% de descuento</p>
-                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
-                    </div>
-                </div>
-                <!-- Fin de la segunda carta -->
-            </div>
-            <!-- Fin de la segunda columna -->
-        
-            <!-- Tercera columna -->
-            <div class="col-md-4">
-                <!-- Tercera carta -->
-                <div class="card" style="width: 18rem;" id="ofertas3">
-                    <img src="/assets_ofertas/zapatila-3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Air Jordan 3 High SE Raft</h5>
-                        <p class="card-text">110000$</p>
-                        <p class="discount">20% de descuento</p>
-                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
-                    </div>
-                </div>
-                <!-- Fin de la tercera carta -->
-            </div>
-            <!-- Fin de la tercera columna -->
-        </div>
-        
-        <div class="row">
-            <!-- Cuarta columna -->
-            <div class="col-md-4">
-                <!-- Cuarta carta -->
-                <div class="card" style="width: 18rem;" id="ofertas4">
-                    <img src="/assets_ofertas/zapatila-4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Jordan Nu Retro 1 Low t</h5>
-                        <p class="card-text">70000$</p>
-                        <p class="discount">25% de descuento</p>
-                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
-                    </div>
-                </div>
-                <!-- Fin de la cuarta carta -->
-            </div>
-            <!-- Fin de la cuarta columna -->
-        
-            <!-- Quinta columna -->
-            <div class="col-md-4">
-                <!-- Quinta carta -->
-                <div class="card" style="width: 18rem;" id="ofertas5">
-                    <img src="/assets_ofertas/zapatilla-5.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Air Jordan 1 High OG Mauve</h5>
-                        <p class="card-text">80000$</p>
-                        <p class="discount">25% de descuento</p>
-                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
-                    </div>
-                </div>
-                <!-- Fin de la quinta carta -->
-            </div>
-            <!-- Fin de la quinta columna -->
-        
-            <!-- Sexta columna -->
-            <div class="col-md-4">
-                <!-- Sexta carta -->
-                <div class="card" style="width: 18rem;" id="ofertas6">
-                    <img src="/assets_ofertas/zapatilla-6.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Adidas Daily 3.0</h5>
-                        <p class="card-text">145999$</p>
-                        <p class="discount">25% de descuento</p>
-                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
-                    </div>
-                </div>
-                <!-- Fin de la sexta carta -->
-            </div>
-            <!-- Fin de la sexta columna -->
-        </div>
-        
-        <div class="row">
-            <!-- Séptima columna -->
-            <div class="col-md-4">
-                <!-- Séptima carta -->
-                <div class="card" style="width: 18rem;" id="ofertas7">
-                    <img src="/assets_ofertas/zapatilla-7.jpg" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Zapatillas Rivalry Low</h5>
-                        <p class="card-text">120000$</p>
-                        <p class="discount">20% de descuento</p>
-                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
-                    </div>
-                </div>
-                <!-- Fin de la séptima carta -->
-            </div>
-            <!-- Fin de la séptima columna -->
-        
-            <!-- Octava columna -->
-            <div class="col-md-4">
-                <!-- Octava carta -->
-                <div class="card" style="width: 18rem;" id="ofertas8">
-                    <img src="/assets_ofertas/zapatilla-8.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Zapatillas Ultraboost 1.0</h5>
-                        <p class="card-text">90000$</p>
-                        <p class="discount">10% de descuento</p>
-                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
-                    </div>
-                </div>
-                <!-- Fin de la octava carta -->
-            </div>
-            <div class="col-md-4">
-                <!-- Octava carta -->
-                <div class="card" style="width: 18rem;" id="ofertas8">
-                    <img src="/assets_ofertas/zapatilla-9.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Zapatillas Ultraboost 1.0</h5>
-                        <p class="card-text">100000$</p>
-                        <p class="discount">20% de descuento</p>
-                        <boton  class="btn btn-primary"><span>agregar al carrito</span></boton>
-                    </div>
-                </div>
-                <!-- Fin de la octava carta -->
-            </div>
-            </div>
+        </article>
         <!-- Contenedor de métodos -->
 
 
@@ -227,15 +191,15 @@
 
     <div class="grid-column">
         <div class="figura">
-            <img src="/assets_ofertas/IMG-4-ofertas.jpg" width="500" height="600" alt="Imagen de oferta 1">
+            <img src="/offers/assets_ofertas/IMG-4-ofertas.jpg" width="500" height="600" alt="Imagen de oferta 1">
         </div>
 
         <div class="figura">
-            <img src="/assets_ofertas/IMG-5-ofertas.jpg" width="500" height="600" alt="Imagen de oferta 2">
+            <img src="/offers/assets_ofertas/IMG-5-ofertas.jpg" width="500" height="600" alt="Imagen de oferta 2">
         </div>
 
         <div class="figura">
-            <img src="/assets_ofertas/img-2-ofertas.jpg" width="500" height="600" alt="Imagen de oferta 3">
+            <img src="/offers/assets_ofertas/img-2-ofertas.jpg" width="500" height="600" alt="Imagen de oferta 3">
         </div>
     </div>
 
@@ -253,7 +217,7 @@
                 <h2>Novedades SneakyWalks</h2>
                 <a class="linkPaginas" href="#">Las mejores promos</a>
                 <a class="linkPaginas" href="#">Nuestra Coleccion</a>
-                <a class="linkPaginas" href="/carrito.html">Mira tu carrito</a>
+                <a class="linkPaginas" href="/cart/carrito.html">Mira tu carrito</a>
 
             </div>
             <div class="box">

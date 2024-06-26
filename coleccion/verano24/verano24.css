@@ -177,17 +177,17 @@ figcaption {
 
 
 /* Estilos para la cuadrícula en dispositivos pequeños */
-@media screen and (max-width: 800px) {
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna */
-    }
+@media screen and (max-width: 1000px) {
+  .grid-container {
+      grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna */
+  }
 }
 
 /* Estilos para la cuadrícula en dispositivos muy pequeños */
-@media screen and (max-width: 500px) {
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna */
-    }
+@media screen and (max-width: 700px) {
+  .grid-container {
+      grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna */
+  }
 }
 
 .carts {

@@ -57,15 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       botonAgregar.addEventListener("click", () => {
           agregarZapatilla(title);
-          totalPrecio += parseFloat(price);
-          amount += 1;
-          actualizarTotal(); // Actualizar el total después de agregar una zapatilla
       });
       botonRestar.addEventListener("click", () => {
           restarZapatilla(title, -1);
-          totalPrecio -= parseFloat(price);
-          amount -= 1;
-          actualizarTotal(); // Actualizar el total después de restar una zapatilla
       });
     });
 
@@ -77,6 +71,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Llamar a actualizarTotal al cargar el HTML inicialmente
     actualizarTotal();
+
+    // Actualizar el contador del carrito
+    updateCartQuantity();
+  }
+
+  function updateCartQuantity() {
+    const zapatillasEnCarrito = buyThings.reduce((total, product) => total + product.amount, 0);
+    const quantitySpan = document.querySelector('#quantity');
+    if (quantitySpan) {
+      quantitySpan.innerText = zapatillasEnCarrito;
+    }
   }
 
   function agregarZapatilla(title) {
@@ -114,6 +119,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   loadHtml();
-
-
 });

@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const imagenesUrbanas = document.querySelectorAll("#urbano");
     const imagenesDeportivas = document.querySelectorAll("#deportivo");
     const imagenesFormal = document.querySelectorAll("#formal");
+    
+    
 
     if (valorSeleccionado === "urbano") {
       // Ocultar todas las imágenes deportivas y sus figcaptions
@@ -93,8 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
           figcaption.style.display = "block";
         }
       });
-
-      // Mostrar todas las imágenes urbanas y sus figcaptions
       imagenesUrbanas.forEach(function (imagen) {
         imagen.style.display = "none";
         const figcaption = imagen.querySelector("#figcaption");

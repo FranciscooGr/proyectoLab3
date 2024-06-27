@@ -38,7 +38,7 @@ body {
 }
 
 .custom-padding {
-  margin: 1% 1% 0; /* Ajusta los márgenes superior, derecho e izquierdo */
+  margin: 1% 1% 1% 1%; /* Ajusta los márgenes superior, derecho e izquierdo */
   border-radius: 20px;
 }
 
@@ -165,7 +165,7 @@ figcaption {
 
 .navbar {
   background-color: #474646; /* Color de fondo de la barra */
-  padding: 10px; /* Espaciado interno */
+  padding: 25px; /* Espaciado interno */
   border-radius: 15px; /* Bordes redondeados */
   max-width: 95vw; /* Ancho máximo */
   margin: 20px auto 0; /* Centrar horizontalmente */
@@ -182,7 +182,6 @@ figcaption {
   font-family: 'Bebas Neue', sans-serif; /* Fuente */
   font-size: 30px; /* Tamaño de fuente */
   text-decoration: none; /* Sin subrayado en el enlace */
-  padding: 0 15px; /* Espaciado a la izquierda y derecha */
 }
 
 .footer {
@@ -430,4 +429,13 @@ figcaption {
 
 .carrito-activo .icon-cart path {
   fill: rgb(34, 233, 84);
+}
+
+
+#quantity {
+  color: white;
+  font-size: 16px;
+  
+  top: 5px;
+  right: 10px;
 }

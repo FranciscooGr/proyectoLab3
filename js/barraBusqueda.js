@@ -1,4 +1,3 @@
-// Espera a que el DOM se cargue completamente antes de ejecutar cualquier código
 document.addEventListener("DOMContentLoaded", function() {
     // Código dentro de esta función se ejecutará cuando el DOM esté listo
 
@@ -21,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (text.includes(searchTerm)) {
                     // Si el texto incluye el término de búsqueda, eliminamos la clase "filter" para mostrar el elemento
                     el.classList.remove("filter");
+                    // Movemos el elemento al principio del contenedor
+                    el.parentNode.prepend(el);
                 } else {
                     // Si el texto no incluye el término de búsqueda, agregamos la clase "filter" para ocultar el elemento
                     el.classList.add("filter");

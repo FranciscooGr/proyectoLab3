@@ -15,6 +15,7 @@
     <script src="/js/agregarAlCarrito.js"></script>
 <script src="/js/filtro.js"></script>
 <script src="/js/barraBusqueda.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
     <body>
         <header class="header">
@@ -202,11 +203,21 @@
     </div>
   </div>
 </article>
+<script>
+  $(document).ready(function() {
+      var path = window.location.pathname;
+      $('.btn-custom').each(function() {
+          if ($(this).attr('href') === path) {
+              $(this).css('color', 'black'); // Cambiar color a negro
+          }
+      });
+  });
+  </script>
 <div class="paginas">
   <div class="btn-group me-2" role="group" aria-label="First group" style="display: flex; justify-content: center;">
-    <a href="/homePage/index.html" class="btn btn-custom" style="color: white;">1</a>
-    <a href="/homePage/index2.html" class="btn btn-custom"  style="color: white;">2</a>
-    <a href="/homePage/index3.html" class="btn btn-custom"  style="color: white;">3</a>
+      <a href="/homePage/index.html" class="btn btn-custom" style="color: white;">1</a>
+      <a href="/homePage/index2.html" class="btn btn-custom"  style="color: white;">2</a>
+      <a href="/homePage/index3.html" class="btn btn-custom"  style="color: white;">3</a>
   </div>
 </div>
 </main>

@@ -119,4 +119,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   loadHtml();
+
+  // Evento para escuchar las teclas de flecha arriba y abajo
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowUp") {
+      agregarZapatilla("Nombre del producto"); // Reemplaza "Nombre del producto" con el nombre real del producto que quieres aumentar
+    } else if (event.key === "ArrowDown") {
+      restarZapatilla("Nombre del producto", -1); // Reemplaza "Nombre del producto" con el nombre real del producto que quieres disminuir
+    }
+  });
+
 });

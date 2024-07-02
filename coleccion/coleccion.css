@@ -332,9 +332,7 @@ figcaption {
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 767px) {
   /* Ajustes para el encabezado */
-  .navbar-brand span {
-    display: none; /* Oculta el texto "SneakyWalks" */
-  }
+  
 
   .navbar-brand img {
     width: 40px; /* Reduzca el tamaño del logo */

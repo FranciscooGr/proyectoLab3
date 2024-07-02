@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function loadHtml() {
     carritoContainer.innerHTML = ""; // Limpia el contenido actual
-    totalPrecio = 0; // Resetea el total de precios
+    totalPrecio = 5000; // Resetea el total de precios
 
     buyThings.forEach((productCard) => {
       const { id, title, price, image, amount } = productCard;

@@ -342,11 +342,11 @@ figcaption {
   transition: .2s linear;
   top: 105%;
 }
-
 .icon-cart {
   width: 22px;
   height: 22px;
   transition: .2s linear;
+  margin-right: 5px;
 }
 
 .icon-cart path {

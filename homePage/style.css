@@ -136,7 +136,7 @@ body {
   margin-left: 0; /* Elimina el margen izquierdo para mover todo a la izquierda */
   margin-right: 0; /* Elimina el margen derecho */
   width: 22%;
-  padding: 0 4% 0 5%;
+  padding: 1% 12%;
   max-width: 22%;
   align-items: center;
   margin: 5% 0 0 35%;

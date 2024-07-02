@@ -7,6 +7,9 @@ body {
   /* Establece una altura mínima del viewport */
   html, body {
     height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
   
   /* Establece el color de fondo general */
@@ -43,9 +46,10 @@ body {
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0; /* Asegura que no hay margen izquierdo */
-    height: auto;
+    height: 100%;
     width: 100%; /* Ancho completo */
     max-width: 100%;
+    max-height: 100%;
     padding: 4% 0% 10% 10%; /* Ajustado para adaptarse al nuevo margen superior */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -304,18 +308,10 @@ body {
   /* APARTADO DEL CARRITO DE COMPRA*/
   
   .maincarrito {
-    position: relative;
     display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-    padding: 4% 2% 10% 2%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    background-color: rgba(231, 223, 236, 0);
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between; /* Asegura que los elementos se distribuyan correctamente */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    padding: 20px;
   }
   
   
@@ -564,147 +560,134 @@ body {
     transform: translate(0);
     box-shadow: none;
   }
-  
+  .carrito {
+    
+    
+    flex: 1; /* Toma todo el espacio disponible */
+   /* Espacio entre el carrito y el resumen de compra */
+    margin: 9% 4% 0 4%;
+  }
   /* Apartado del resumen de compra */
   .resumenCompra {
-    background-color: #e9e7eb;
-    border: 1px solid #454446;
-    padding: 10px;
-    border-radius: 1rem;
-    margin-top: -5%;
-    width: 100%;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3%;margin-bottom: 3%;
+    margin: 9% 3% 20% 0;
+    border: 1px solid black; /* Borde fino y negro */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    width: 300px; /* Ajusta el ancho del resumen de compra según tu necesidad */
+    background-color: #f4f4f4; /* Color de fondo para diferenciar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
   }
   
   
   @media (max-width: 768px) {
+    .navbar {
+        justify-content: center; /* Centrar la navbar en dispositivos móviles */
+    }
+
     .maincarrito {
-      margin-top: 5%;
-      padding: 5% 2% 15% 2%;
-      max-width: 100%;
-      width: 100%;
+        flex-direction: column; /* Orden en columna para dispositivos móviles */
+        align-items: center; /* Centra los elementos en el eje vertical */
+        padding: 0 10px; /* Añadir relleno lateral */
     }
-    .carrito{
-      margin-top: 15%;
-      max-width: 100%;
-      width: 100%;
+
+    .carrito {
+        margin-top: 15%;
+        max-width: 100%;
+        width: 100%;
+        order: 1; /* Coloca el carrito arriba */
     }
-    .carrito h3 {
-      margin-top: 3%;
-      margin-left: 0%;
-      font-size: 18px;
-    }
-  
-    .carrito hr {
-      margin-left: -4%;
-      width: 105.5%;
-    }
-  
-    .producto img {
-      width: 80px;
-      margin-right: 5px;
-    }
-  
-    .nombre-producto {
-      font-size: 14px;
-    }
-  
-    .precioProducto{
-      margin-left: 10%;
-      font-size: 14px;
-    }
-  
+
     .resumenCompra {
-      width: 90%;
-      padding: 5%;
+        width: 90%;
+        padding: 5%;
+        margin: 20px 0; /* Añade espacio arriba y abajo del resumen de compra */
+        order: 2; /* Coloca el resumen de compra abajo */
     }
-  
+
     .boton1, .boton2 {
-      padding: 8px 15px;
-      margin-top: 5px;
-      font-size: 14px;
+        padding: 8px 15px;
+        margin-top: 5px;
+        font-size: 14px;
+        display: block; /* Asegura que los botones se muestren como bloques */
+        width: 90%; /* Ajusta el ancho de los botones */
+        margin: 10px auto; /* Centra los botones horizontalmente */
     }
-   
+
     .buttonCantidad-container {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 3%;
-      margin-left: 0%;
-      margin-right: -12%;
-      margin-top: -9%;
-      max-width: 10%;
-      margin-bottom: -20%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: -9%;
+        max-width: 90%;
     }
-  
+
     .button-group {
-      display: flex;
-      align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centra los elementos en el grupo de botones */
+        width: 100%;
     }
-  
+
     .button-group .buttonCantidad,
     .button-group .bin-button {
-      margin: 0 5px;
+        margin: 0 5px;
     }
-  
+
     .bin-button {
-      height: 25px; /* Ajusta la altura según tu diseño */
-      width: 25px; /* Ajusta el ancho según tu diseño */
+        height: 25px; /* Ajusta la altura según tu diseño */
+        width: 25px; /* Ajusta el ancho según tu diseño */
     }
-  }
+}
 
-  .boton-seguirComprando {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Ajusta la altura según sea necesario */
-    margin-bottom: 10px;
-  }
-  
-  .seguir-comprando-button {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px; /* Tamaño de la fuente */
-    width: 50%; /* Ancho del botón */
-    padding: 10px 20px; /* Espaciado interno */
-    background-color: #1b98e6; /* Color de fondo */
-    color: #ffffff; /* Color del texto */
-    border: none; /* Sin bordes */
-    border-radius: 5px; /* Bordes sin redondear */
-    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Transición suave para cambios de color */
-  }
-  
-  .seguir-comprando-button:hover {
-    background-color: #17a3d6; /* Color de fondo al pasar el cursor */
-  }
-  
+.boton-seguirComprando {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
 
-  .boton-mercadoPago {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Ajusta la altura según sea necesario */
-  }
-  
-  .mercadopago-button {
-    font-family: 'Bebas Neue', sans-serif; /* Fuente personalizada */
-    font-size: 20px; /* Tamaño de la fuente */
-    width: 25%; /* Ancho del botón */
-    padding: 15px; /* Espaciado interno */
-    background-color: #126cd1; /* Color de fondo */
-    color: #ffffff; /* Color del texto */
-    border: none; /* Sin bordes */
-    border-radius: 50px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Transición suave para cambios de color */
-  }
-  
-  /* Efecto hover para el botón */
-  .mercadopago-button:hover {
-    background-color: #11c14e; /* Color de fondo al pasar el cursor */
-  }
+.seguir-comprando-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13.5px; 
+  width: 70%; 
+  padding: 10px 20px; 
+  background-color: #1b98e6; 
+  color: #ffffff;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
 
-  
-  
+.seguir-comprando-button:hover {
+  background-color: #17a3d6;
+}
+
+
+.boton-mercadoPago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  margin-bottom: 10px;
+}
+
+.mercadopago-button {
+  font-family: 'Bebas Neue', sans-serif; 
+  font-size: 20px; 
+  width: 70%; 
+  padding: 15px; 
+  background-color: #126cd1; 
+  color: #ffffff; 
+  border: none; 
+  border-radius: 50px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.mercadopago-button:hover {
+  background-color: #11c14e; 
+}
+

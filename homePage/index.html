@@ -17,7 +17,7 @@
 <script src="/js/agregarAlCarrito.js"></script>
 <script src="/js/filtro.js"></script>
 <script src="/js/barraBusqueda.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/client/index.html" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="/homePage/index.html" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
                         
                     </li>
                     <li class="nav-item">
@@ -131,7 +131,7 @@
                         <img src="/assets-2/img-2-urbana.jpg" class="card-img-top" alt="Imagen 2" >
                         <div class="card-body text-center">
                             <h5 class="card-title">Nike Court Vision</h5>
-                            <p class="card-text">1000$</p>
+                            <p class="card-text">40000$</p>
                             <boton class="btn btn-primary"><span>agregar al carrito</span> </boton>
                         </div>
                     </figure>
@@ -216,12 +216,22 @@
         </div>
     </div>
 </article>
+<script>
+    $(document).ready(function() {
+        var path = window.location.pathname;
+        $('.btn-custom').each(function() {
+            if ($(this).attr('href') === path) {
+                $(this).css('color', 'black'); // Cambiar color a negro
+            }
+        });
+    });
+    </script>
 <div class="paginas">
-  <div class="btn-group me-2" role="group" aria-label="First group" style="display: flex; justify-content: center;">
-      <a href="/homePage/index.html" class="btn btn-custom" style="color: white;">1</a>
-      <a href="/homePage/index2.html" class="btn btn-custom"  style="color: white;">2</a>
-      <a href="/homePage/index3.html" class="btn btn-custom"  style="color: white;">3</a>
-  </div>
+    <div class="btn-group me-2" role="group" aria-label="First group" style="display: flex; justify-content: center;">
+        <a href="/homePage/index.html" class="btn btn-custom" style="color: white;">1</a>
+        <a href="/homePage/index2.html" class="btn btn-custom"  style="color: white;">2</a>
+        <a href="/homePage/index3.html" class="btn btn-custom"  style="color: white;">3</a>
+    </div>
 </div>
 </main>
 <!-- En el cuerpo del documento -->

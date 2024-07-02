@@ -34,13 +34,13 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="/indexp.php" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/coleccion/coleccion.html" style="font-family:'Bebas Neue'; font-size: 20px">Colección</a>
+                        <a class="nav-link" href="/coleccion.php" style="font-family:'Bebas Neue'; font-size: 20px">Colección</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ofertas.html" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
+                        <a class="nav-link" href="/ofertas.php" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/actualizarinfo.html">
@@ -48,7 +48,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="carrito.html">
+                        <a href="/carrito.php">
                             <button data-quantity="0" class="btn-cart">
                                 <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
                                     <title>icon-cart </title>
@@ -60,7 +60,6 @@
                     </li>      
                 </ul>
             </div>
-                  
         </div>
       </div>
     </nav>

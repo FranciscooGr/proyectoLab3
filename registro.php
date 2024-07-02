@@ -80,13 +80,13 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="/indexp.php" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/coleccion/coleccion.html" style="font-family:'Bebas Neue'; font-size: 20px">Colección</a>
+                            <a class="nav-link" href="/coleccion.php" style="font-family:'Bebas Neue'; font-size: 20px">Colección</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/ofertas.html" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
+                            <a class="nav-link" href="/ofertas.php" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/cuenta.html" style="font-family:'Bebas Neue'; font-size: 20px">Cuenta</a>

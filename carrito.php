@@ -1,84 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/cart/styleCart.css">
+    <link rel="stylesheet" href="style.css">
     <title > SneakyWalks Carrito</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="/js/mostrarCarrito.js"></script>
-    <script src="/js/agregarAlCarrito.js"></script>
+    <script></script>
+    <style>
+        /* Add your custom styles here */
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Carrito</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-custom custom-padding fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <span style="color: white; font-family: 'Bebas Neue'; font-size: 30px;">SneakyWalks</span>
-                    <img src="/assets-2/imgLogo.png" style="width: 50px; height: 50px; color: white;">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/homePage/index.html" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
-                            
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/coleccion/coleccion.html" style="font-family:'Bebas Neue'; font-size: 20px">Colección</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/offers/ofertas.html" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/cuenta.html" style="font-family:'Bebas Neue'; font-size: 20px">Cuenta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/cart/carrito.html">
-                                <button  class="btn-cart" id="cantidadDeZapatillas">
-                                    
-                                    <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
-                                        <title>icon-cart </title>
-                                        <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
-                                        <span id="quantity"></span>
-                                    </svg>
-                                </button>
-                            </a>
-                        </li>      
-                        
-                    </ul>
-                </div>
-                      
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom custom-padding fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span style="color: white; font-family: 'Bebas Neue'; font-size: 30px;">SneakyWalks</span>
+                <img src="assets-2/imgLogo.png" style="width: 50px; height: 50px; color: white;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/indexp.php" style="font-family:'Bebas Neue'; font-size: 20px">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/coleccion.php" style="font-family:'Bebas Neue'; font-size: 20px">Colección</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ofertas.php" style="font-family:'Bebas Neue'; font-size: 20px">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/actualizarinfo.html">
+                            <img src="/assets-2/cuent.png" height="30.52" alt="cuentiniciada">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/carrito.php">
+                            <button data-quantity="0" class="btn-cart">
+                              <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+                                <title>icon-cart</title>
+                                <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+                              </svg>
+                              <span class="quantity"></span>
+                            </button>
+                        </a>
+                      </li>
+                       
+                </ul>
             </div>
-          </div>
-        </nav>
-      </header>
+            <a class="navbar-brand ms-auto" href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>       
+        </div>
+    </nav>
+    
+</header>
+    
 <main class="maincarrito">
   <div class="carrito" id="carrito-container">
     <h3>Productos</h3>
     <hr>
   </div>
-
-  <div class="resumenCompra">
-    <header>
-      <p>Resumen de compra</p>
-      <hr>
-    </header>
-    <section>
-      <p>Envío (5000$)</p>
-      <hr>
-      <p>TOTAL $</p>
-      <p style="font-weight: bold;" id="total"></p>
-    </section>
-    <footer>
-      <button id="checkout-button">Proceder al Pago</button>
-    </footer>
-  </div>
 </main>
+
+
+<main>
+  <div class="resumenCompra">
+    <head>
+        <p>Resumen de compra</p>
+        <hr>
+    </head>
+    <body>
+        <p>Envio (5000$)</p>
+        <hr>
+        <p>Subtotal $</p>
+        <p id="subTotal"></p>
+        <p style="font-weight: bold;">TOTAL $</p>
+    </body>
+    <footer>
+      
+        <button class="boton1">Finalizar compra</button>
+        <button class="boton2"><a class="nav-link" aria-current="page" href="/index.html">Seguir comprando</a></button>
+    </footer>
+</div>
+</main>
+<script src="/js/productos.js"></script>
 <footer class="footer">
   <div class="grupo-1">
       <div class="box">
@@ -90,9 +102,9 @@
       </div>
       <div class="box">
           <h2>Novedades SneakyWalks</h2>
-          <a class="linkPaginas" href="/offers/ofertas.html">Las mejores promos</a>
+          <a class="linkPaginas" href="/ofertas.html">Las mejores promos</a>
           <a class="linkPaginas" href="/coleccion/coleccion.html">Nuestra Coleccion</a>
-          <a class="linkPaginas" href="/cart/carrito.html">Mira tu carrito</a>
+          <a class="linkPaginas" href="/carrito.html">Mira tu carrito</a>
 
       </div>
       <div class="box">
@@ -122,5 +134,6 @@
       <small>&copy;2024 <b>Slee down</b> -Todos Los Derechos Reservados.</small>
   </div>
 </footer>
+
 </body>
 </html>

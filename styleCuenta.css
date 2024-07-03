@@ -10,7 +10,22 @@ html, body {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-
+.bg-custom {
+    background-color: #454446; /* Establece el color de fondo personalizado */
+  }
+  /* Estilos para la barra de navegación */
+  .navbar-brand {
+    color: white; /* Cambiado a blanco para mayor contraste */
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: white; /* Establece el color del texto de los enlaces de navegación en blanco */
+  }
+  
+  .custom-padding {
+    margin: 1% 1% 1% 1%; /* Ajusta los márgenes superior, derecho e izquierdo */
+    border-radius: 20px;
+  }
 
 .formulario {
     margin-top: 60px; /* Adjusted to account for the navbar height */
@@ -194,3 +209,156 @@ input[type="text"], input[type="email"], input[type="password"] {
         font-size: 18px;
     }
 }
+.btn-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    right: 0;
+    top: -5px;
+  }
+  
+  .btn-cart::after {
+    content: attr(data-quantity);
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    top: 105%;
+  }
+  .producto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .producto img {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .producto-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .producto-info .nombre-producto {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .precio-container {
+    margin-right: 2%;
+    color: black; /* Cambia el color del precio a negro */
+  }
+  
+  .cantidad-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cantidad-container .bin-button,
+  .cantidad-container .buttonCantidad {
+    margin-left: 10px; /* Ajusta el margen según sea necesario */
+    cursor: pointer;
+  }
+  
+  .cantidad {
+    margin: 0 5px; /* Ajusta el margen alrededor del número de cantidad */
+    min-width: 20px; /* Evita que los botones se muevan cuando la cantidad tiene dos dígitos */
+    text-align: center; /* Centra el texto de la cantidad */
+  }
+  
+  .icon-cart {
+    width: 22px;
+    height: 22px;
+    transition: .2s linear;
+    margin-right: 5px;
+  }
+  
+  .icon-cart path {
+    fill: rgb(8, 112, 240);
+    transition: .2s linear;
+  }
+  
+  .btn-cart:hover > .icon-cart {
+    transform: scale(1.2);
+  }
+  
+  .btn-cart:hover > .icon-cart path {
+    fill: rgb(34, 233, 84);
+  }
+  
+  .btn-cart:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 80%;
+  }
+  
+  .quantity {
+    display: none;
+  }
+  
+  .carrito-activo .icon-cart {
+    fill: rgb(34, 233, 84);
+  }
+  
+  .carrito-activo .icon-cart path {
+    fill: rgb(34, 233, 84);
+  }
+  
+  /* Escrito sobre el carrito */
+  .carrito h3 {
+    margin-top: -3%;
+    margin-left: -10%;
+  }
+  
+  .carrito hr {
+    margin-left: -12%;
+    width: 120%;
+    border-width: 2px;
+  }
+  
+  /* Estructura del producto */
+  .producto {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  
+  .producto img {
+    width: 100px;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .nombre-producto {
+    font-weight: bold;
+    flex: 1;
+  }
+  .totalProductos{
+    white-space: nowrap;
+  align-items: center;
+  }
+  .precioProducto {
+    margin-top: 0;
+    margin-left: 25%;
+    white-space: nowrap;
+  }
+  
